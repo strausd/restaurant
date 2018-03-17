@@ -28,7 +28,6 @@ export class DetailPage extends React.Component {
                 </div>
             );
         }
-        console.log(this.props.restaurants);
     }
 }
 
