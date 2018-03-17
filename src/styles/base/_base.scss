@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'avenir';
-    src: url('/dist/fonts/avenir-next-medium.otf') format("opentype");
+    src: url('/dist/fonts/avenir-next-regular.otf') format("opentype");
 }
 
 @font-face {
@@ -11,4 +11,8 @@
 body {
     font-family: 'avenir', sans-serif;
     margin: 0;
+}
+
+.page-content {
+    margin-top: $space-lg;
 }

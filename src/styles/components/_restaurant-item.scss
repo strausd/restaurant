@@ -1,33 +1,64 @@
 .restaurant-item {
-    height: 180px;
-    width: 100%;
-    overflow: hidden;
     position: relative;
 
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: url('/dist/icons/cellGradientBackground@2x.png');
-        background-attachment: scroll;
-        background-repeat: repeat-x;
-        background-size: auto auto;
-        background-position: 50% 75%;
-    }
-
-    img {
-        width: 100%;
+    a {
+        color: $white;
+        text-decoration: none;
         
-        // &:before {
-            // background: rgba(0,0,255, 0.5);
-            // background-image: url('/dist/icons/cellGradientBackground@2x.png'); 
-        // }
-    }
+        .restaurant-item__info {
+            position: absolute;
+            bottom: 0;
+            z-index: 3;
+            margin-left: $space-sm;
+            margin-bottom: $space-xs;
 
+            h2 {
+                margin: 0;
+                font-size: $font-md;
+            }
+
+            .restaurant-item__category {
+                font-family: 'avenir';
+                margin: 0;
+                font-weight: 200;
+            }
+        }
+
+        .restaurant-item__img {
+    
+            height: $space-xl;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        
+            &::before {
+                background: url('/dist/icons/cellGradientBackground@2x.png');
+                background-attachment: scroll;
+                background-repeat: repeat-x;
+                background-size: auto auto;
+                background-position: 50% 75%;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+            }
+        
+            img {        
+                width: 100%;
+                position: absolute;  
+                top: 0;  
+                bottom: 0;  
+                left: 0;  
+                right: 0;  
+                margin: auto;
+            }
+        }
+    }
 }
+
 
 // http://via.placeholder.com/350x150

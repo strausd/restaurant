@@ -6,7 +6,9 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header__link">
-                <Link to="/">Lunch Tyme</Link>
+                <Link to="/">
+                    <h1>Lunch Tyme</h1>
+                </Link>
             </div>
             <div className="header__map">
                 <Link to="/map">

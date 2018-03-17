@@ -3,15 +3,25 @@
     display: flex;
     font-family: 'avenir-bold';
     font-size: $font-lg;
-    height: 70px;
+    height: $space-lg;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
 
     .header__link {
-        margin-top: 35px;
+        margin-top: $space-md;
         
         a {
             color: $white;
             text-decoration: none;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: inherit;
         }
     }
 
