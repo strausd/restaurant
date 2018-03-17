@@ -16,12 +16,22 @@
         
         a {
             color: $white;
-            text-decoration: none;
         }
 
         h1 {
             margin: 0;
             font-size: inherit;
+        }
+    }
+
+    .header__back {
+        position: absolute;
+        top: 33px;
+        left: 13px;
+
+        img {
+            height: 25px;
+            width: auto;
         }
     }
 
@@ -31,8 +41,8 @@
         right: 10px;
 
         img {
-            width: 33px;
             height: auto;
+            width: 33px;
         }
     }
 }

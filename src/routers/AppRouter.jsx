@@ -1,23 +1,39 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import Header from '../components/Header';
 import HomePage from '../components/HomePage';
+import DetailPage from '../components/DetailPage';
+import { fetchRestaurants } from '../actions/baseActions';
 
 
-const AppRouter = () => {
-    return (
-        <Router>
-            <div>
-                <Header />
-                <Switch>
-                    <Route exact path="/" component={HomePage} />
-                    <Route path="/map" component={HomePage} />
-                    <Route path="/:id" component={HomePage} />
-                </Switch>
-            </div>
-        </Router>
-    );
+export class AppRouter extends React.Component {
+    constructor(props) {
+        super(props);
+        props.fetchRestaurants();
+    }
+
+    render() {
+        return (
+            <Router>
+                <div>
+                    <Header />
+                    <Switch>
+                        <Route exact path="/" component={HomePage} />
+                        <Route path="/map" component={HomePage} />
+                        <Route path="/:id" component={DetailPage} />
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
 };
 
-export default AppRouter;
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchRestaurants: () => dispatch(fetchRestaurants())
+    };
+};
+
+export default connect(undefined, mapDispatchToProps)(AppRouter);

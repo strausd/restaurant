@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
-const RestaurantItem = ({ restaurant }) => (
+const RestaurantListItem = ({ restaurant, index }) => (
     <div className="restaurant-item">
-        <a href="#">
+        <Link to={'/' + index} >
             <div className="restaurant-item__info">
                 <h2>{restaurant.name}</h2>
                 <div className="restaurant-item__category">{restaurant.category}</div>
@@ -11,8 +12,8 @@ const RestaurantItem = ({ restaurant }) => (
             <div className="restaurant-item__img">
                 <img src={restaurant.backgroundImageURL} align="middle" />
             </div>
-        </a>
+        </Link>
     </div>
 );
 
-export default RestaurantItem;
+export default RestaurantListItem;

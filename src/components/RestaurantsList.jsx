@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import RestaurantItem from './RestaurantItem';
+import RestaurantListItem from './RestaurantListItem';
 
 
 class RestaurantsList extends React.Component {
@@ -15,7 +15,7 @@ class RestaurantsList extends React.Component {
         return (
             <div>
                 {this.props.restaurants.map((restaurant, i) => (
-                    <RestaurantItem key={i} restaurant={restaurant} />
+                    <RestaurantListItem key={i} restaurant={restaurant} index={i} />
                 ))}
             </div>
         );

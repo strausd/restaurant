@@ -1,0 +1,36 @@
+.restaurant-detail {
+    width: 100%;
+
+    .restaurant-detail__map {
+        content: '';
+        height: $space-xl;
+        width: 100%;
+        background: gray;
+    }
+
+    .restaurant-detail__header {
+        background: $dark-green;
+        color: $white;
+        height: 60px;
+        padding: 0 $space-sm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .restaurant-detail__info {
+        padding: 0 $space-sm;
+
+        a {
+            color: $black;
+        }
+
+        .restaurant-detail__address {
+            margin-top: 16px;
+        }
+
+        .restaurant-detail__phone, .restaurant-detail__twitter {
+            margin-top: 26px;
+        }
+    }
+}
