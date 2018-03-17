@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Header from '../components/Header';
 import HomePage from '../components/HomePage';
 import DetailPage from '../components/DetailPage';
+import MapPage from '../components/MapPage';
 import { fetchRestaurants } from '../actions/baseActions';
 
 
@@ -21,7 +22,7 @@ export class AppRouter extends React.Component {
                     <Header />
                     <Switch>
                         <Route exact path="/" component={HomePage} />
-                        <Route path="/map" component={HomePage} />
+                        <Route path="/map" component={MapPage} />
                         <Route path="/:id" component={DetailPage} />
                     </Switch>
                 </div>
