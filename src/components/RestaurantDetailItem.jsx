@@ -1,6 +1,8 @@
 import React from 'react';
+import MapDetail from './MapDetail';
 
-// AIzaSyCRGU4zvepa0suuU1BZu_tWiEn7ho5MSEc
+
+// AIzaSyBGyVswgcCkctFs8x4X-14BS16VXWINHPA-oE
 const RestaurantDetailItem = ({ restaurant }) => {
     const destination_str = encodeURIComponent(
         restaurant.name + ' ' +
@@ -12,7 +14,16 @@ const RestaurantDetailItem = ({ restaurant }) => {
     return (
         <div className="restaurant-detail">
             <div className="restaurant-detail__map">
-
+                <MapDetail 
+                    isMarkerShow={true}
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGyVswgcCkctFs8x4X-14BS16VXWINHPA&v=3.exp&libraries=geometry,drawing,places"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `100%` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                    lat={restaurant.location.lat}
+                    lng={restaurant.location.lng}
+                    zoom={13}
+                />
             </div>
             <div className="restaurant-detail__header">
                 <h2>{restaurant.name}</h2>
