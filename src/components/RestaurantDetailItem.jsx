@@ -1,7 +1,14 @@
 import React from 'react';
 
-
+// AIzaSyCRGU4zvepa0suuU1BZu_tWiEn7ho5MSEc
 const RestaurantDetailItem = ({ restaurant }) => {
+    const destination_str = encodeURIComponent(
+        restaurant.name + ' ' +
+        restaurant.location.address + ' ' +
+        restaurant.location.city + ' ' +
+        restaurant.location.state + ' ' +
+        restaurant.location.postalCode
+    );
     return (
         <div className="restaurant-detail">
             <div className="restaurant-detail__map">
@@ -13,9 +20,11 @@ const RestaurantDetailItem = ({ restaurant }) => {
             </div>
             <div className="restaurant-detail__info">
                 <div className="restaurant-detail__address">
-                    {restaurant.location.address}
-                    <br/>
-                    {restaurant.location.city}, {restaurant.location.state} {restaurant.location.postalCode}
+                    <a target="_blank" href={'https://www.google.com/maps/dir/?api=1&destination=' + destination_str}>
+                        {restaurant.location.address}
+                        <br/>
+                        {restaurant.location.city}, {restaurant.location.state} {restaurant.location.postalCode}
+                    </a>
                 </div>
                 {
                     !restaurant.contact ? null : (
