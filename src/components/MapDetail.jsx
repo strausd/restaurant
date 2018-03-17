@@ -6,10 +6,10 @@ const MapDetail = withScriptjs(withGoogleMap((props) =>
         defaultZoom={props.zoom}
         defaultCenter={{ lat: props.lat, lng: props.lng }}
     >
-        <Marker position={{ lat: props.lat, lng: props.lng }}>
-            <InfoWindow>
-                <div>Testing</div>
-            </InfoWindow>
+        <Marker position={{ lat: props.lat, lng: props.lng }} onClick={props.onMarkerToggle}>
+            {props.isOpenMarkerInfo && <InfoWindow onCloseClick={props.onMarkerToggle}>
+                <div>{props.restaurant.name}</div>
+            </InfoWindow>}
         </Marker>
     </GoogleMap>
 ));
