@@ -1,0 +1,33 @@
+.restaurant-item {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('/dist/icons/cellGradientBackground@2x.png');
+        background-attachment: scroll;
+        background-repeat: repeat-x;
+        background-size: auto auto;
+        background-position: 50% 75%;
+    }
+
+    img {
+        width: 100%;
+        
+        // &:before {
+            // background: rgba(0,0,255, 0.5);
+            // background-image: url('/dist/icons/cellGradientBackground@2x.png'); 
+        // }
+    }
+
+}
+
+// http://via.placeholder.com/350x150

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'avenir';
+    src: url('/dist/fonts/avenir-next-medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'avenir-bold';
+    src: url('/dist/fonts/avenir-next-demi-bold.otf') format("opentype");
+}
+
+body {
+    font-family: 'avenir', sans-serif;
+    margin: 0;
+}
