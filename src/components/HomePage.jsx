@@ -4,9 +4,10 @@ import { connect } from 'react-redux'
 import RestaurantsList from './RestaurantsList';
 
 
-export const HomePage = () => {
+export const HomePage = (props) => {
+    console.log(props);
     return (
-        <div className="page-content">
+        <div className={props.location.pathname === '/' ? 'page-content' : 'page-content hidden-mobile'}>
             <RestaurantsList />
         </div>
     );

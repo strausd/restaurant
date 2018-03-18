@@ -30,3 +30,11 @@ a {
     position: relative;
     margin-top: $space-lg;
 }
+
+.hidden-mobile {
+    display: none;
+
+    @media (min-width: $bp-md-start) {
+        display: block;
+    }
+}
