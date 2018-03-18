@@ -14,7 +14,7 @@ body {
 }
 
 .page-content {
-    margin-top: $space-lg;
+    // margin-top: $space-lg;
 }
 
 h2 {
@@ -24,4 +24,9 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+.full-page {
+    position: relative;
+    margin-top: $space-lg;
 }

@@ -1,11 +1,18 @@
 .restaurant-detail {
     width: 100%;
+    position: fixed;
+    top: $space-lg;
+    right: 0;
 
     .restaurant-detail__map {
         content: '';
         height: $space-xl;
         width: 100%;
         background: gray;
+
+        @media (min-width: $bp-md-start) {
+            height: double_value($space-xl);
+        }
     }
 
     .restaurant-detail__header {
@@ -32,5 +39,13 @@
         .restaurant-detail__phone, .restaurant-detail__twitter {
             margin-top: 26px;
         }
+    }
+
+    @media (min-width: $bp-md-start) and (max-width: $bp-md-end) {
+        width: 50%;
+    }
+
+    @media (min-width: $bp-lg-start){
+        width: 65%;
     }
 }

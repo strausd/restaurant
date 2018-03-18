@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\strausd\.yarn\bin\yarn.js add
+  C:\Program Files\nodejs\node.exe C:\Users\strausd\.yarn\bin\yarn.js run dev-server
 
 PATH: 
   C:\Users\strausd\.yarn\bin;C:\Users\strausd\.config\yarn\global\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\strausd\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Python\Python3.6.1\Scripts;C:\Program Files (x86)\Python\Python3.6.1;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\strausd\AppData\Local\Microsoft\WindowsApps;C:\Users\strausd\AppData\Local\atom\bin;C:\Program Files\Heroku\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\strausd\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
@@ -25,13 +25,14 @@ npm manifest:
     "scripts": {
       "build:dev": "webpack --config webpack.dev.js",
       "build:prod": "webpack --config webpack.prod.js",
-      "dev-server": "webpack-dev-server --open --config webpack.dev.js",
+      "dev-server": "webpack-dev-server --config webpack.dev.js",
       "test": "jest",
       "test-watch": "jest --watch",
       "start": "node server/server.js",
       "heroku-postbuild": "npm run build:prod"
     },
     "dependencies": {
+      "axios": "^0.18.0",
       "babel-core": "^6.26.0",
       "babel-loader": "^7.1.2",
       "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -46,6 +47,7 @@ npm manifest:
       "node-sass": "^4.7.2",
       "react": "^16.2.0",
       "react-dom": "^16.2.0",
+      "react-google-maps": "^9.4.5",
       "react-loadable": "^5.3.1",
       "react-redux": "^5.0.6",
       "react-router-dom": "^4.2.2",
@@ -382,6 +384,13 @@ Lockfile:
   aws4@^1.2.1, aws4@^1.6.0:
     version "1.6.0"
     resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+  
+  axios@^0.18.0:
+    version "0.18.0"
+    resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+    dependencies:
+      follow-redirects "^1.3.0"
+      is-buffer "^1.1.5"
   
   babel-code-frame@^6.26.0:
     version "6.26.0"
@@ -927,7 +936,7 @@ Lockfile:
       mkdirp "^0.5.1"
       source-map-support "^0.4.15"
   
-  babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
+  babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
     version "6.26.0"
     resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
     dependencies:
@@ -1279,6 +1288,10 @@ Lockfile:
     version "4.1.0"
     resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
   
+  can-use-dom@^0.1.0:
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/can-use-dom/-/can-use-dom-0.1.0.tgz#22cc4a34a0abc43950f42c6411024a3f6366b45a"
+  
   caniuse-api@^1.5.2:
     version "1.6.1"
     resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-1.6.1.tgz#b534e7c734c4f81ec5fbe8aca2ad24354b962c6c"
@@ -1328,6 +1341,10 @@ Lockfile:
       ansi-styles "^3.1.0"
       escape-string-regexp "^1.0.5"
       supports-color "^4.0.0"
+  
+  change-emitter@^0.1.2:
+    version "0.1.6"
+    resolved "https://registry.yarnpkg.com/change-emitter/-/change-emitter-0.1.6.tgz#e8b2fe3d7f1ab7d69a32199aff91ea6931409515"
   
   cheerio@^1.0.0-rc.2:
     version "1.0.0-rc.2"
@@ -2472,7 +2489,7 @@ Lockfile:
     dependencies:
       bser "^2.0.0"
   
-  fbjs@^0.8.16:
+  fbjs@^0.8.1, fbjs@^0.8.16:
     version "0.8.16"
     resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
     dependencies:
@@ -2557,6 +2574,12 @@ Lockfile:
     dependencies:
       inherits "^2.0.1"
       readable-stream "^2.0.4"
+  
+  follow-redirects@^1.3.0:
+    version "1.4.1"
+    resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.4.1.tgz#d8120f4518190f55aac65bb6fc7b85fcd666d6aa"
+    dependencies:
+      debug "^3.1.0"
   
   for-in@^0.1.3:
     version "0.1.8"
@@ -2786,6 +2809,10 @@ Lockfile:
       lodash "~4.17.4"
       minimatch "~3.0.2"
   
+  google-maps-infobox@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/google-maps-infobox/-/google-maps-infobox-2.0.0.tgz#1ea6de93c0cdf4138c2d586331835c83dcc59dc2"
+  
   graceful-fs@^4.1.11, graceful-fs@^4.1.2:
     version "4.1.11"
     resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
@@ -2961,6 +2988,10 @@ Lockfile:
   hoist-non-react-statics@^2.2.1, hoist-non-react-statics@^2.3.0:
     version "2.3.1"
     resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
+  
+  hoist-non-react-statics@^2.3.1:
+    version "2.5.0"
+    resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
   
   home-or-tmp@^2.0.0:
     version "2.0.0"
@@ -4014,6 +4045,10 @@ Lockfile:
     version "4.17.4"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
   
+  lodash@^4.16.2:
+    version "4.17.5"
+    resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+  
   loglevel@^1.4.1:
     version "1.6.0"
     resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.0.tgz#ae0caa561111498c5ba13723d6fb631d24003934"
@@ -4071,6 +4106,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
     dependencies:
       object-visit "^1.0.0"
+  
+  marker-clusterer-plus@^2.1.4:
+    version "2.1.4"
+    resolved "https://registry.yarnpkg.com/marker-clusterer-plus/-/marker-clusterer-plus-2.1.4.tgz#f8eff74d599dab3b7d0e3fed5264ea0e704f5d67"
+  
+  markerwithlabel@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/markerwithlabel/-/markerwithlabel-2.0.1.tgz#822f4eb68c488c2509c5ebdb75982eb84a856096"
   
   math-expression-evaluator@^1.2.14:
     version "1.2.17"
@@ -5166,6 +5209,14 @@ Lockfile:
       loose-envify "^1.3.1"
       object-assign "^4.1.1"
   
+  prop-types@^15.5.8:
+    version "15.6.1"
+    resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
+    dependencies:
+      fbjs "^0.8.16"
+      loose-envify "^1.3.1"
+      object-assign "^4.1.1"
+  
   proxy-addr@~2.0.2:
     version "2.0.2"
     resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.2.tgz#6571504f47bb988ec8180253f85dd7e14952bdec"
@@ -5332,6 +5383,22 @@ Lockfile:
       object-assign "^4.1.1"
       prop-types "^15.6.0"
   
+  react-google-maps@^9.4.5:
+    version "9.4.5"
+    resolved "https://registry.yarnpkg.com/react-google-maps/-/react-google-maps-9.4.5.tgz#920c199bdc925e0ce93880edffb09428d263aafa"
+    dependencies:
+      babel-runtime "^6.11.6"
+      can-use-dom "^0.1.0"
+      google-maps-infobox "^2.0.0"
+      invariant "^2.2.1"
+      lodash "^4.16.2"
+      marker-clusterer-plus "^2.1.4"
+      markerwithlabel "^2.0.1"
+      prop-types "^15.5.8"
+      recompose "^0.26.0"
+      scriptjs "^2.5.8"
+      warning "^3.0.0"
+  
   react-loadable@^5.3.1:
     version "5.3.1"
     resolved "https://registry.yarnpkg.com/react-loadable/-/react-loadable-5.3.1.tgz#9699e9a08fed49bacd69caaa282034b62a76bcdd"
@@ -5454,6 +5521,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/realpath-native/-/realpath-native-1.0.0.tgz#7885721a83b43bd5327609f0ddecb2482305fdf0"
     dependencies:
       util.promisify "^1.0.0"
+  
+  recompose@^0.26.0:
+    version "0.26.0"
+    resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.26.0.tgz#9babff039cb72ba5bd17366d55d7232fbdfb2d30"
+    dependencies:
+      change-emitter "^0.1.2"
+      fbjs "^0.8.1"
+      hoist-non-react-statics "^2.3.1"
+      symbol-observable "^1.0.4"
   
   redent@^1.0.0:
     version "1.0.0"
@@ -5792,6 +5868,10 @@ Lockfile:
     dependencies:
       ajv "^5.0.0"
       ajv-keywords "^2.1.0"
+  
+  scriptjs@^2.5.8:
+    version "2.5.8"
+    resolved "https://registry.yarnpkg.com/scriptjs/-/scriptjs-2.5.8.tgz#d0c43955c2e6bad33b6e4edf7b53b8965aa7ca5f"
   
   scss-tokenizer@^0.2.3:
     version "0.2.3"
@@ -6290,6 +6370,10 @@ Lockfile:
   symbol-observable@^1.0.2, symbol-observable@^1.0.3:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.1.0.tgz#5c68fd8d54115d9dfb72a84720549222e8db9b32"
+  
+  symbol-observable@^1.0.4:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   
   symbol-tree@^3.2.1:
     version "3.2.2"
@@ -6974,14 +7058,17 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Missing list of packages to add to your project.
-      at new MessageError (C:\Users\strausd\.yarn\lib\cli.js:186:110)
-      at Object.<anonymous> (C:\Users\strausd\.yarn\lib\cli.js:40587:13)
-      at Generator.next (<anonymous>)
-      at step (C:\Users\strausd\.yarn\lib\cli.js:98:30)
-      at C:\Users\strausd\.yarn\lib\cli.js:116:14
-      at Promise (<anonymous>)
-      at F (C:\Users\strausd\.yarn\lib\cli.js:23451:28)
-      at Object.<anonymous> (C:\Users\strausd\.yarn\lib\cli.js:95:12)
-      at Object.run (C:\Users\strausd\.yarn\lib\cli.js:40599:19)
-      at run (C:\Users\strausd\.yarn\lib\cli.js:89113:20)
+  Error: Command failed.
+  Exit code: 3221225786
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c webpack-dev-server --config webpack.dev.js
+  Directory: C:\Users\strausd\Dropbox\Stuff\udemy\personal\restaurant
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\strausd\.yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\strausd\.yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\strausd\.yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:125:13)
+      at ChildProcess.emit (events.js:213:7)
+      at maybeClose (internal/child_process.js:927:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)

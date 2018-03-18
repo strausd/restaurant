@@ -15,3 +15,13 @@ $space-lg: 70px;
 $space-md: 35px;
 $space-sm: 12px;
 $space-xs: 6px;
+
+// Breakpoints
+$bp-md-start: 721px;
+$bp-md-end: 1024px;
+$bp-lg-start: 1025px;
+
+// Functions
+@function double_value($value) {
+  @return $value + $value;
+}

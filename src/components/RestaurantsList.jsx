@@ -13,7 +13,7 @@ class RestaurantsList extends React.Component {
             );
         }
         return (
-            <div>
+            <div className="restaurants-list">
                 {this.props.restaurants.map((restaurant, i) => (
                     <RestaurantListItem key={i} restaurant={restaurant} index={i} />
                 ))}

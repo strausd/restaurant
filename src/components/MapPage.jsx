@@ -2,28 +2,64 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import MapDetail from './MapDetail';
+import { getMapInfoArray } from '../misc/utils';
 
 
 export class MapPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            restaurant_marker_info: []
+        };
+    }
 
-    state = {
-        isOpenMarkerInfo: false
-    };
+    componentWillMount() {
+        if (!this.props.restaurants || this.props.restaurants.length < 1) {
+            this.setState({ restaurant_marker_info: [] });
+        } else {
+            const restaurants = getMapInfoArray(this.props.restaurants);
+            this.setState({ restaurant_marker_info: restaurants });
+        }
+    }
+    
 
-    onMarkerToggle = () => {
-        this.setState({ isOpenMarkerInfo: !this.state.isOpenMarkerInfo });
+    componentWillReceiveProps(nextProps) {
+        if (!nextProps.restaurants || nextProps.restaurants.length < 1) {
+            this.setState({ restaurant_marker_info: [] });
+        } else {
+            const restaurants = getMapInfoArray(nextProps.restaurants);
+            this.setState({ restaurant_marker_info: restaurants });
+        }
+    }
+
+    onMarkerToggle = (index) => {
+        this.setState(prevState => {
+            return {
+                restaurant_marker_info: prevState.restaurant_marker_info.map((r, r_index) => {
+                    if (index === r_index) {
+                        return {
+                            ...r,
+                            isOpenMarkerInfo: !r.isOpenMarkerInfo
+                        };
+                    } else {
+                        return {
+                            ...r,
+                            isOpenMarkerInfo: false
+                        };
+                    }
+                })
+            };
+        });
     }
 
     render() {
         if (!this.props.restaurants || this.props.restaurants.length < 1) {
-            console.log('Loading');
             return (
                 <div className="page-content">
                     Loading...
                 </div>
             );
         } else {
-            const restaurant = this.props.restaurants[0];
             return (
                 <div className="page-content">
                     <div className="map-page">
@@ -33,12 +69,11 @@ export class MapPage extends React.Component {
                             loadingElement={<div style={{ height: `100%` }} />}
                             containerElement={<div style={{ height: `100%` }} />}
                             mapElement={<div style={{ height: `100%` }} />}
-                            lat={restaurant.location.lat}
-                            lng={restaurant.location.lng}
+                            lat={32.98}
+                            lng={-96.835}
                             zoom={13}
-                            isOpenMarkerInfo={this.state.isOpenMarkerInfo}
                             onMarkerToggle={this.onMarkerToggle}
-                            restaurant={restaurant}
+                            restaurants={this.state.restaurant_marker_info}
                         />
                     </div>
                 </div>

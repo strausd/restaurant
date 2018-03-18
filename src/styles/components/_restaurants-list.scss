@@ -1,0 +1,12 @@
+.restaurants-list {
+    width: 100%;
+    margin: 0;
+
+    @media (min-width: $bp-md-start) and (max-width: $bp-md-end) {
+        width: 50%;
+    }
+
+    @media (min-width: $bp-lg-start){
+        width: 35%;
+    }
+}

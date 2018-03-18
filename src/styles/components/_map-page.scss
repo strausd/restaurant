@@ -2,3 +2,11 @@
     height: 100vh;
     width: 100%;
 }
+
+.marker-info {
+    
+    .marker-info__name {
+        font-family: 'avenir-bold';
+        font-size: $font-md;
+    }
+}

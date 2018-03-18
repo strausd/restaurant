@@ -18,13 +18,13 @@ export class AppRouter extends React.Component {
     render() {
         return (
             <Router>
-                <div>
+                <div className="full-page">
                     <Header />
-                    <Switch>
-                        <Route exact path="/" component={HomePage} />
-                        <Route path="/map" component={MapPage} />
-                        <Route path="/:id" component={DetailPage} />
-                    </Switch>
+                    <Route path="/" component={HomePage} />
+                    <Route path="/map" component={MapPage} />
+                    <Route path="/:id" component={DetailPage} />
+                    {/* <Switch>
+                    </Switch> */}
                 </div>
             </Router>
         );

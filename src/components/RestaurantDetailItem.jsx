@@ -1,26 +1,39 @@
 import React from 'react';
-import MapDetail from './MapDetail';
 
-// isOpenMarkerInfo
-// onMarkerToggle
+
+import MapDetail from './MapDetail';
+import { getMapInfoArray, getGMapsLocationQuery } from '../misc/utils';
+
+
 // AIzaSyBGyVswgcCkctFs8x4X-14BS16VXWINHPA-oE
 class RestaurantDetailItem extends React.Component  {
+    constructor(props) {
+        super(props);
+        this.state = {
+            restaurant_marker_info: []
+        };
+    }
+
     restaurant = this.props.restaurant;
 
-    destination_str = encodeURIComponent(
-        this.restaurant.name + ' ' +
-        this.restaurant.location.address + ' ' +
-        this.restaurant.location.city + ' ' +
-        this.restaurant.location.state + ' ' +
-        this.restaurant.location.postalCode
-    );
-
-    state = {
-        isOpenMarkerInfo: false
-    };
+    componentWillMount() {
+        this.setState({ restaurant_marker_info: getMapInfoArray([this.props.restaurant]) });
+    }
 
     onMarkerToggle = () => {
         this.setState({ isOpenMarkerInfo: !this.state.isOpenMarkerInfo });
+    }
+
+    onMarkerToggle = (index) => {
+        this.setState(prevState => {
+            const r = prevState.restaurant_marker_info[0];
+            return {
+                restaurant_marker_info: [{
+                    ...r,
+                    isOpenMarkerInfo: !r.isOpenMarkerInfo
+                }]
+            };
+        });
     }
 
     render() {
@@ -36,9 +49,8 @@ class RestaurantDetailItem extends React.Component  {
                         lat={this.restaurant.location.lat}
                         lng={this.restaurant.location.lng}
                         zoom={13}
-                        isOpenMarkerInfo={this.state.isOpenMarkerInfo}
                         onMarkerToggle={this.onMarkerToggle}
-                        restaurant={this.restaurant}
+                        restaurants={this.state.restaurant_marker_info}
                     />
                 </div>
                 <div className="restaurant-detail__header">
@@ -47,7 +59,7 @@ class RestaurantDetailItem extends React.Component  {
                 </div>
                 <div className="restaurant-detail__info">
                     <div className="restaurant-detail__address">
-                        <a target="_blank" href={'https://www.google.com/maps/dir/?api=1&destination=' + this.destination_str}>
+                        <a target="_blank" href={'https://www.google.com/maps/dir/?api=1&destination=' + getGMapsLocationQuery(this.restaurant)}>
                             {this.restaurant.location.address}
                             <br/>
                             {this.restaurant.location.city}, {this.restaurant.location.state} {this.restaurant.location.postalCode}
@@ -59,9 +71,11 @@ class RestaurantDetailItem extends React.Component  {
                                 <div className="restaurant-detail__phone">
                                     <a href={'tel:' + this.restaurant.contact.phone} >{this.restaurant.contact.formattedPhone}</a>
                                 </div>
-                                <div className="restaurant-detail__twitter">
-                                    <a href={'https://twitter.com/' + this.restaurant.contact.twitter} target="_blank" >@{this.restaurant.contact.twitter}</a>
-                                </div>
+                                {!this.restaurant.contact.twitter ? null : (
+                                    <div className="restaurant-detail__twitter">
+                                        <a href={'https://twitter.com/' + this.restaurant.contact.twitter} target="_blank" >@{this.restaurant.contact.twitter}</a>
+                                    </div>
+                                )}
                             </div>
                         )
                     }
