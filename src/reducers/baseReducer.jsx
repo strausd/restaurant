@@ -5,6 +5,11 @@ export const restaurants = (state = {}, action) => {
                 ...state,
                 restaurants: action.restaurants
             };
+        case 'SELECT_RESTAURANT':
+            return {
+                ...state,
+                selected: action.restaurant
+            };
         default:
             return state;
     }

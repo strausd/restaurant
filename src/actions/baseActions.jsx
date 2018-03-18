@@ -20,3 +20,10 @@ export const fetchRestaurants = () => {
         });
     };
 };
+
+export const selectRestaurant = restaurant => {
+    return {
+        type: 'SELECT_RESTAURANT',
+        restaurant
+    };
+};

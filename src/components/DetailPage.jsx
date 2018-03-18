@@ -6,13 +6,9 @@ import RestaurantDetailItem from './RestaurantDetailItem';
 
 
 export class DetailPage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.id = Number(props.match.params.id);
-    }
-
     render() {
-        if (isNaN(this.id)) {
+        const id = this.props.match.params.id;
+        if (isNaN(id)) {
             return <Redirect to="/" />
         } else if (!this.props.restaurants || this.props.restaurants.length < 1) {
             return (
@@ -21,7 +17,7 @@ export class DetailPage extends React.Component {
                 </div>
             );
         } else {
-            const restaurant = this.props.restaurants[this.id];
+            const restaurant = this.props.restaurants[id];
             return (
                 <div className="page-content">
                     <RestaurantDetailItem restaurant={restaurant} />
@@ -31,9 +27,11 @@ export class DetailPage extends React.Component {
     }
 }
 
-const mapStateToProps = ({ restaurants }) => {
+
+const mapStateToProps = ({ restaurants, restaurant }) => {
     return {
-        restaurants
+        restaurants,
+        restaurant
     };
 };
 

@@ -9,34 +9,15 @@ import { getMapInfoArray, getGMapsLocationQuery } from '../misc/utils';
 class RestaurantDetailItem extends React.Component  {
     constructor(props) {
         super(props);
-        this.state = {
-            restaurant_marker_info: []
-        };
-    }
-
-    restaurant = this.props.restaurant;
-
-    componentWillMount() {
-        this.setState({ restaurant_marker_info: getMapInfoArray([this.props.restaurant]) });
+        this.state = { isOpenMarkerInfo: false };
     }
 
     onMarkerToggle = () => {
         this.setState({ isOpenMarkerInfo: !this.state.isOpenMarkerInfo });
     }
 
-    onMarkerToggle = (index) => {
-        this.setState(prevState => {
-            const r = prevState.restaurant_marker_info[0];
-            return {
-                restaurant_marker_info: [{
-                    ...r,
-                    isOpenMarkerInfo: !r.isOpenMarkerInfo
-                }]
-            };
-        });
-    }
-
     render() {
+        console.log('New', this.props.restaurant.name);
         return (
             <div className="restaurant-detail">
                 <div className="restaurant-detail__map">
@@ -46,34 +27,35 @@ class RestaurantDetailItem extends React.Component  {
                         loadingElement={<div style={{ height: `100%` }} />}
                         containerElement={<div style={{ height: `100%` }} />}
                         mapElement={<div style={{ height: `100%` }} />}
-                        lat={this.restaurant.location.lat}
-                        lng={this.restaurant.location.lng}
+                        lat={this.props.restaurant.location.lat}
+                        lng={this.props.restaurant.location.lng}
                         zoom={13}
                         onMarkerToggle={this.onMarkerToggle}
-                        restaurants={this.state.restaurant_marker_info}
+                        isOpenMarkerInfo={this.state.isOpenMarkerInfo}
+                        restaurant={this.props.restaurant}
                     />
                 </div>
                 <div className="restaurant-detail__header">
-                    <h2>{this.restaurant.name}</h2>
-                    <div className="restaurant-detail__category">{this.restaurant.category}</div>
+                    <h2>{this.props.restaurant.name}</h2>
+                    <div className="restaurant-detail__category">{this.props.restaurant.category}</div>
                 </div>
                 <div className="restaurant-detail__info">
                     <div className="restaurant-detail__address">
-                        <a target="_blank" href={'https://www.google.com/maps/dir/?api=1&destination=' + getGMapsLocationQuery(this.restaurant)}>
-                            {this.restaurant.location.address}
+                        <a target="_blank" href={'https://www.google.com/maps/dir/?api=1&destination=' + getGMapsLocationQuery(this.props.restaurant)}>
+                            {this.props.restaurant.location.address}
                             <br/>
-                            {this.restaurant.location.city}, {this.restaurant.location.state} {this.restaurant.location.postalCode}
+                            {this.props.restaurant.location.city}, {this.props.restaurant.location.state} {this.props.restaurant.location.postalCode}
                         </a>
                     </div>
                     {
-                        !this.restaurant.contact ? null : (
+                        !this.props.restaurant.contact ? null : (
                             <div>
                                 <div className="restaurant-detail__phone">
-                                    <a href={'tel:' + this.restaurant.contact.phone} >{this.restaurant.contact.formattedPhone}</a>
+                                    <a href={'tel:' + this.props.restaurant.contact.phone} >{this.props.restaurant.contact.formattedPhone}</a>
                                 </div>
-                                {!this.restaurant.contact.twitter ? null : (
+                                {!this.props.restaurant.contact.twitter ? null : (
                                     <div className="restaurant-detail__twitter">
-                                        <a href={'https://twitter.com/' + this.restaurant.contact.twitter} target="_blank" >@{this.restaurant.contact.twitter}</a>
+                                        <a href={'https://twitter.com/' + this.props.restaurant.contact.twitter} target="_blank" >@{this.props.restaurant.contact.twitter}</a>
                                     </div>
                                 )}
                             </div>
