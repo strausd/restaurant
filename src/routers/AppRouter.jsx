@@ -21,10 +21,10 @@ export class AppRouter extends React.Component {
                 <div className="full-page">
                     <Header />
                     <Route path="/" component={HomePage} />
-                    <Route path="/map" component={MapPage} />
-                    <Route path="/:id" component={DetailPage} />
-                    {/* <Switch>
-                    </Switch> */}
+                    <Switch>
+                        <Route path="/map" component={MapPage} />
+                        <Route path="/:id" component={DetailPage} />
+                    </Switch>
                 </div>
             </Router>
         );
