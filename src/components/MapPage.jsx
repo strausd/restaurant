@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MapDetail from './MapDetail';
+import MapMulti from './MapMulti';
 import { getMapInfoArray } from '../misc/utils';
 
 
@@ -63,7 +63,7 @@ export class MapPage extends React.Component {
             return (
                 <div className="page-content">
                     <div className="map-page">
-                        <MapDetail 
+                        <MapMulti 
                             isMarkerShow={true}
                             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGyVswgcCkctFs8x4X-14BS16VXWINHPA&v=3.exp&libraries=geometry,drawing,places"
                             loadingElement={<div style={{ height: `100%` }} />}
