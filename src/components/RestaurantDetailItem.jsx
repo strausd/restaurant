@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import MapDetail from './MapDetail';
 import { getMapInfoArray, getGMapsLocationQuery } from '../misc/utils';
 
@@ -17,7 +16,6 @@ class RestaurantDetailItem extends React.Component  {
     }
 
     render() {
-        console.log('New', this.props.restaurant.name);
         return (
             <div className="restaurant-detail">
                 <div className="restaurant-detail__map">
