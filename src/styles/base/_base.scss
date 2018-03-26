@@ -46,9 +46,14 @@ a {
 
 .noscroll {
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
     @media (min-width: $bp-md-start) {
         overflow: auto;
+        position: relative;
     }
 }
 

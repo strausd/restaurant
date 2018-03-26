@@ -16,7 +16,7 @@ export class RestaurantListItem extends React.Component {
 
     render() {
         return (
-            <div className="restaurant-item">
+            <div className="restaurant-item" id={this.props.index}>
                 <Link to={'/' + this.props.index} onClick={this.handleRestaurantClick} >
                     <div className="restaurant-item__info">
                         <h2>{this.props.restaurant.name}</h2>
