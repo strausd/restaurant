@@ -19,6 +19,7 @@ body {
 
 .page-content {
     // margin-top: $space-lg;
+    position: relative;
 }
 
 h2 {
@@ -40,6 +41,14 @@ a {
 
     @media (min-width: $bp-md-start) {
         display: block;
+    }
+}
+
+.noscroll {
+    overflow: hidden;
+
+    @media (min-width: $bp-md-start) {
+        overflow: auto;
     }
 }
 
