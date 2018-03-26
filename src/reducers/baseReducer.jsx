@@ -10,6 +10,11 @@ export const restaurants = (state = {}, action) => {
                 ...state,
                 selected: action.restaurant
             };
+        case 'SCROLL_TO':
+            return {
+                ...state,
+                id: action.id
+            };
         default:
             return state;
     }

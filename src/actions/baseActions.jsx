@@ -27,3 +27,11 @@ export const selectRestaurant = restaurant => {
         restaurant
     };
 };
+
+export const scrollTo = position => {
+    const id = position && !isNaN(position) ? Number(position) : null;
+    return {
+        type: 'SCROLL_TO',
+        id
+    };
+}
