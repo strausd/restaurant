@@ -15,7 +15,7 @@ export const HomePage = ({ location }) => {
 
             <TransitionGroup>
                 <CSSTransition key={location.pathname} classNames="slide" timeout={250} mountOnEnter unmountOnExit>
-                    <div className="slide">
+                    <div className={location.pathname === '/' ? '' : 'slide'}>
                         <Switch location={location}>
                             <Route exact path="/map" component={MapPage} />
                             <Route exact path="/:id" component={DetailPage} />

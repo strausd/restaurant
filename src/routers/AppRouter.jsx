@@ -6,13 +6,11 @@ import Header from '../components/Header';
 import HomePage from '../components/HomePage';
 import DetailPage from '../components/DetailPage';
 import MapPage from '../components/MapPage';
-import { fetchRestaurants } from '../actions/baseActions';
 
 
 export class AppRouter extends React.Component {
     constructor(props) {
         super(props);
-        props.fetchRestaurants();
     }
 
     render() {
@@ -27,10 +25,4 @@ export class AppRouter extends React.Component {
     }
 };
 
-const mapDispatchToProps = dispatch => {
-    return {
-        fetchRestaurants: () => dispatch(fetchRestaurants())
-    };
-};
-
-export default connect(undefined, mapDispatchToProps)(AppRouter);
+export default AppRouter;

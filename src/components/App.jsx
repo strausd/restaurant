@@ -1,11 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import AppRouter from '../routers/AppRouter';
+import { fetchRestaurants } from '../actions/baseActions'
 
 
 class App extends React.Component {
     constructor(props) {
         super(props);
+        props.fetchRestaurants();
     }
 
     render() {
@@ -17,4 +20,10 @@ class App extends React.Component {
     }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchRestaurants: () => dispatch(fetchRestaurants())
+    };
+};
+
+export default connect(undefined, mapDispatchToProps)(App);
