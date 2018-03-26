@@ -40,12 +40,4 @@
             margin-top: 26px;
         }
     }
-
-    @media (min-width: $bp-md-start) and (max-width: $bp-md-end) {
-        width: 50%;
-    }
-
-    @media (min-width: $bp-lg-start){
-        width: 65%;
-    }
 }

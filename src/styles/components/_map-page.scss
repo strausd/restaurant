@@ -4,14 +4,6 @@
     top: $space-lg;
     right: 0;
     height: calc(100% - #{$space-lg});
-
-    @media (min-width: $bp-md-start) and (max-width: $bp-md-end) {
-        width: 50%;
-    }
-
-    @media (min-width: $bp-lg-start){
-        width: 65%;
-    }
 }
 
 .marker-info {
