@@ -3,6 +3,8 @@
     position: fixed;
     top: $space-lg;
     right: 0;
+    max-height: calc(100% - #{$space-lg});
+    overflow-y: auto;
 
     .restaurant-detail__map {
         content: '';
@@ -26,7 +28,7 @@
     }
 
     .restaurant-detail__info {
-        padding: 0 $space-sm;
+        padding: 0 $space-sm $space-sm $space-sm;
 
         a {
             color: $black;
