@@ -54,6 +54,12 @@ export class HomePage extends React.Component {
         return (
             <div className="page-content">
                 <RestaurantsList />
+                <div className="starter hidden-mobile">
+                    <h1>Welcome to Lunch Tyme 🍕🍔🌮</h1>
+                    <h3>Step 1 - Browse</h3>
+                    <h3>Step 2 - Go</h3>
+                    <h3>Step 3 - Eat</h3>
+                </div>
 
                 <TransitionGroup>
                     <CSSTransition key={this.props.location.pathname} classNames="slide" timeout={250} mountOnEnter unmountOnExit>

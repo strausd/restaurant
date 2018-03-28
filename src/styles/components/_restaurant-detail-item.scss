@@ -12,7 +12,11 @@
         width: 100%;
         background: gray;
 
-        @media (min-width: $bp-md-start) {
+        @media (min-width: $bp-md-start) and (max-width: $bp-md-end) {
+            height: 250px;
+        }
+
+        @media (min-width: $bp-lg-start) {
             height: double_value($space-xl);
         }
     }

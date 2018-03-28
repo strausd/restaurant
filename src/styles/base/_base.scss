@@ -22,6 +22,11 @@ body {
     position: relative;
 }
 
+h1 {
+    margin: 0;
+    font-size: $font-xl;
+}
+
 h2 {
     margin: 0;
     font-size: $font-md;
@@ -53,6 +58,25 @@ a {
     @media (min-width: $bp-md-start) {
         overflow: auto;
         position: relative;
+    }
+}
+
+.starter {
+    position: fixed;
+    top: $space-lg;
+    right: 0;
+    width: 100%;
+    margin-top: $space-sm;
+    padding-left: $space-sm;
+
+    @media (min-width: $bp-md-start) and (max-width: $bp-md-end) {
+        width: 50%;
+        left: 50%;
+    }
+
+    @media (min-width: $bp-lg-start){
+        width: 65%;
+        left: 35%;
     }
 }
 
