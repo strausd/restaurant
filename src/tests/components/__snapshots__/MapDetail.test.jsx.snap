@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render MapDetail component properly at root 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <withScriptjs(withGoogleMap(Component))
+    containerElement={
+      <div
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      />
+    }
+    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGyVswgcCkctFs8x4X-14BS16VXWINHPA&v=3.exp&libraries=geometry,drawing,places"
+    isMarkerShow={true}
+    isOpenMarkerInfo={false}
+    lat={32.950787}
+    lng={-96.821118}
+    loadingElement={
+      <div
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      />
+    }
+    mapElement={
+      <div
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      />
+    }
+    onMarkerToggle={[MockFunction]}
+    restaurant={
+      Object {
+        "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
+        "category": "Burgers",
+        "contact": Object {
+          "formattedPhone": "(972) 387-2337",
+          "phone": "9723872337",
+          "twitter": "hopdoddy",
+        },
+        "location": Object {
+          "address": "5100 Belt Line Road, STE 502",
+          "cc": "US",
+          "city": "Addison",
+          "country": "United States",
+          "crossStreet": "Dallas North Tollway",
+          "formattedAddress": Array [
+            "5100 Belt Line Road, STE 502 (Dallas North Tollway)",
+            "Addison, TX 75254",
+            "United States",
+          ],
+          "lat": 32.950787,
+          "lng": -96.821118,
+          "postalCode": "75254",
+          "state": "TX",
+        },
+        "name": "Hopdoddy Burger Bar",
+      }
+    }
+    zoom={13}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "style": Object {
+        "height": "100%",
+      },
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "style": Object {
+          "height": "100%",
+        },
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -4,7 +4,7 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "reac
 import { getGMapsLocationQuery } from '../misc/utils';
 
 
-const MapDetail = withScriptjs(withGoogleMap((props) =>
+export const MapDetail = withScriptjs(withGoogleMap((props) =>
     <GoogleMap
         defaultZoom={props.zoom}
         center={{ lat: props.lat, lng: props.lng }}
