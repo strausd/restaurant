@@ -17,219 +17,186 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <ul>
-        <li>
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            exact={true}
+      "children": Array [
+        <div
+          className="header__icon header__back"
+        >
+          <Link
+            replace={false}
             to="/"
           >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            to="/projects"
+            <img
+              alt="Map"
+              src="/dist/icons/ic_webBack@2x.png"
+            />
+          </Link>
+        </div>,
+        <div
+          className="header__link"
+        >
+          <Link
+            replace={false}
+            to="/"
           >
-            Projects
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            to="/resume"
+            <h1>
+              Lunch Tyme
+            </h1>
+          </Link>
+        </div>,
+        <div
+          className="header__icon header__map"
+        >
+          <Link
+            replace={false}
+            to="/map"
           >
-            Resume
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            to="/about"
-          >
-            About
-          </NavLink>
-        </li>
-      </ul>,
+            <img
+              alt="Map"
+              src="/dist/icons/icon_map@2x.png"
+            />
+          </Link>
+        </div>,
+      ],
+      "className": "header",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              exact={true}
-              to="/"
-            >
-              Home
-            </NavLink>
-          </li>,
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/projects"
-            >
-              Projects
-            </NavLink>
-          </li>,
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/resume"
-            >
-              Resume
-            </NavLink>
-          </li>,
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/about"
-            >
-              About
-            </NavLink>
-          </li>,
-        ],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/"
+          >
+            <img
+              alt="Map"
+              src="/dist/icons/ic_webBack@2x.png"
+            />
+          </Link>,
+          "className": "header__icon header__back",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <img
+              alt="Map"
+              src="/dist/icons/ic_webBack@2x.png"
+            />,
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Map",
+              "src": "/dist/icons/ic_webBack@2x.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": [Function],
+        },
+        "type": "div",
       },
-      "ref": null,
-      "rendered": Array [
-        Object {
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/"
+          >
+            <h1>
+              Lunch Tyme
+            </h1>
+          </Link>,
+          "className": "header__link",
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              exact={true}
-              to="/"
-            >
-              Home
-            </NavLink>,
+            "children": <h1>
+              Lunch Tyme
+            </h1>,
+            "replace": false,
+            "to": "/",
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "activeClassName": "active",
-              "ariaCurrent": "true",
-              "children": "Home",
-              "exact": true,
-              "to": "/",
+              "children": "Lunch Tyme",
             },
             "ref": null,
-            "rendered": "Home",
-            "type": [Function],
+            "rendered": "Lunch Tyme",
+            "type": "h1",
           },
-          "type": "li",
+          "type": [Function],
         },
-        Object {
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/map"
+          >
+            <img
+              alt="Map"
+              src="/dist/icons/icon_map@2x.png"
+            />
+          </Link>,
+          "className": "header__icon header__map",
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/projects"
-            >
-              Projects
-            </NavLink>,
+            "children": <img
+              alt="Map"
+              src="/dist/icons/icon_map@2x.png"
+            />,
+            "replace": false,
+            "to": "/map",
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "activeClassName": "active",
-              "ariaCurrent": "true",
-              "children": "Projects",
-              "to": "/projects",
+              "alt": "Map",
+              "src": "/dist/icons/icon_map@2x.png",
             },
             "ref": null,
-            "rendered": "Projects",
-            "type": [Function],
+            "rendered": null,
+            "type": "img",
           },
-          "type": "li",
+          "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/resume"
-            >
-              Resume
-            </NavLink>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeClassName": "active",
-              "ariaCurrent": "true",
-              "children": "Resume",
-              "to": "/resume",
-            },
-            "ref": null,
-            "rendered": "Resume",
-            "type": [Function],
-          },
-          "type": "li",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/about"
-            >
-              About
-            </NavLink>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeClassName": "active",
-              "ariaCurrent": "true",
-              "children": "About",
-              "to": "/about",
-            },
-            "ref": null,
-            "rendered": "About",
-            "type": [Function],
-          },
-          "type": "li",
-        },
-      ],
-      "type": "ul",
-    },
+        "type": "div",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -238,219 +205,186 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <ul>
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              exact={true}
+        "children": Array [
+          <div
+            className="header__icon header__back"
+          >
+            <Link
+              replace={false}
               to="/"
             >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/projects"
+              <img
+                alt="Map"
+                src="/dist/icons/ic_webBack@2x.png"
+              />
+            </Link>
+          </div>,
+          <div
+            className="header__link"
+          >
+            <Link
+              replace={false}
+              to="/"
             >
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/resume"
+              <h1>
+                Lunch Tyme
+              </h1>
+            </Link>
+          </div>,
+          <div
+            className="header__icon header__map"
+          >
+            <Link
+              replace={false}
+              to="/map"
             >
-              Resume
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              to="/about"
-            >
-              About
-            </NavLink>
-          </li>
-        </ul>,
+              <img
+                alt="Map"
+                src="/dist/icons/icon_map@2x.png"
+              />
+            </Link>
+          </div>,
+        ],
+        "className": "header",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <li>
-              <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                exact={true}
-                to="/"
-              >
-                Home
-              </NavLink>
-            </li>,
-            <li>
-              <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                to="/projects"
-              >
-                Projects
-              </NavLink>
-            </li>,
-            <li>
-              <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                to="/resume"
-              >
-                Resume
-              </NavLink>
-            </li>,
-            <li>
-              <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                to="/about"
-              >
-                About
-              </NavLink>
-            </li>,
-          ],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/"
+            >
+              <img
+                alt="Map"
+                src="/dist/icons/ic_webBack@2x.png"
+              />
+            </Link>,
+            "className": "header__icon header__back",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <img
+                alt="Map"
+                src="/dist/icons/ic_webBack@2x.png"
+              />,
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Map",
+                "src": "/dist/icons/ic_webBack@2x.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": [Function],
+          },
+          "type": "div",
         },
-        "ref": null,
-        "rendered": Array [
-          Object {
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/"
+            >
+              <h1>
+                Lunch Tyme
+              </h1>
+            </Link>,
+            "className": "header__link",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                exact={true}
-                to="/"
-              >
-                Home
-              </NavLink>,
+              "children": <h1>
+                Lunch Tyme
+              </h1>,
+              "replace": false,
+              "to": "/",
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Home",
-                "exact": true,
-                "to": "/",
+                "children": "Lunch Tyme",
               },
               "ref": null,
-              "rendered": "Home",
-              "type": [Function],
+              "rendered": "Lunch Tyme",
+              "type": "h1",
             },
-            "type": "li",
+            "type": [Function],
           },
-          Object {
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/map"
+            >
+              <img
+                alt="Map"
+                src="/dist/icons/icon_map@2x.png"
+              />
+            </Link>,
+            "className": "header__icon header__map",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                to="/projects"
-              >
-                Projects
-              </NavLink>,
+              "children": <img
+                alt="Map"
+                src="/dist/icons/icon_map@2x.png"
+              />,
+              "replace": false,
+              "to": "/map",
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Projects",
-                "to": "/projects",
+                "alt": "Map",
+                "src": "/dist/icons/icon_map@2x.png",
               },
               "ref": null,
-              "rendered": "Projects",
-              "type": [Function],
+              "rendered": null,
+              "type": "img",
             },
-            "type": "li",
+            "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                to="/resume"
-              >
-                Resume
-              </NavLink>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Resume",
-                "to": "/resume",
-              },
-              "ref": null,
-              "rendered": "Resume",
-              "type": [Function],
-            },
-            "type": "li",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                to="/about"
-              >
-                About
-              </NavLink>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "About",
-                "to": "/about",
-              },
-              "ref": null,
-              "rendered": "About",
-              "type": [Function],
-            },
-            "type": "li",
-          },
-        ],
-        "type": "ul",
-      },
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
   ],

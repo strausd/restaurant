@@ -11,7 +11,6 @@ import { scrollTo } from '../actions/baseActions';
 
 
 const isInViewport = y => {
-    // console.log(document.documentElement.clientHeight);
     if (y < document.documentElement.clientHeight) {
         return true;
     }

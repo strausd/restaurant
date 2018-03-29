@@ -6,6 +6,5 @@ import Header from '../../components/Header';
 
 test('should render Header component properly', () => {
     const wrapper = shallow(<Header />);
-    
     expect(wrapper).toMatchSnapshot();
 });

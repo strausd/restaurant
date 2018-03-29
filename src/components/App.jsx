@@ -5,7 +5,7 @@ import AppRouter from '../routers/AppRouter';
 import { fetchRestaurants } from '../actions/baseActions'
 
 
-class App extends React.Component {
+export class App extends React.Component {
     constructor(props) {
         super(props);
         props.fetchRestaurants();

@@ -59,6 +59,9 @@
       "**/src/**.{js,jsx}",
       "!**/src/tests/**"
     ],
+    "roots": [
+      "src/tests"
+    ],
     "setupFiles": [
       "raf/polyfill",
       "<rootDir>/src/tests/setupTests.jsx"
