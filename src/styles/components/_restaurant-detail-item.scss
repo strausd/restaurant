@@ -5,6 +5,7 @@
     right: 0;
     max-height: calc(100% - #{$space-lg});
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 
     .restaurant-detail__map {
         content: '';
