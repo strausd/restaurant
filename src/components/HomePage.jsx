@@ -6,6 +6,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import RestaurantsList from './RestaurantsList';
 import MapPage from './MapPage';
 import DetailPage from './DetailPage';
+import WelcomeMessage from './WelcomeMessage';
 import { scrollTo } from '../actions/baseActions';
 
 
@@ -20,6 +21,9 @@ const isInViewport = y => {
 export class HomePage extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            showWelcome: true
+        };
     }
 
     componentDidMount() {
@@ -40,6 +44,14 @@ export class HomePage extends React.Component {
         this.props.scrollTo(this.props.location.pathname.slice(1));
     }
 
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.location.pathname === '/') {
+            this.setState(prevState => ({ showWelcome: true }));
+        } else {
+            this.setState(prevState => ({ showWelcome: false }));
+        }
+    }
+
     handleBodyNoScroll = () => {
         if (this.props.location.pathname === '/') {
             document.querySelector('body').classList.remove('noscroll');
@@ -54,12 +66,8 @@ export class HomePage extends React.Component {
         return (
             <div className="page-content">
                 <RestaurantsList />
-                <div className="starter hidden-mobile">
-                    <h1>Welcome to Lunch Tyme 🍕🍔🌮</h1>
-                    <h3>Step 1 - Browse</h3>
-                    <h3>Step 2 - Go</h3>
-                    <h3>Step 3 - Eat</h3>
-                </div>
+
+                <WelcomeMessage show={this.state.showWelcome} />
 
                 <TransitionGroup>
                     <CSSTransition key={this.props.location.pathname} classNames="slide" timeout={250} mountOnEnter unmountOnExit>

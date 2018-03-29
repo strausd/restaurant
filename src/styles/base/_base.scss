@@ -41,6 +41,10 @@ a {
     margin-top: $space-lg;
 }
 
+.hidden {
+    display: none;
+}
+
 .hidden-mobile {
     display: none;
 
@@ -66,8 +70,8 @@ a {
     top: $space-lg;
     right: 0;
     width: 100%;
-    margin-top: $space-sm;
-    padding-left: $space-sm;
+    margin-top: $space-md;
+    text-align: center;
 
     @media (min-width: $bp-md-start) and (max-width: $bp-md-end) {
         width: 50%;
@@ -126,4 +130,22 @@ a {
         opacity: .01;
         transform: translateX(0);
     }
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 250ms ease-in;
 }
