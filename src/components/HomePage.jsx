@@ -33,7 +33,6 @@ export class HomePage extends React.Component {
     componentDidUpdate() {
         this.handleBodyNoScroll();
         if (this.props.id && this.props.location.pathname === '/') {
-            console.log('Here');
             const x = window.scrollX;
             const y = document.getElementById(this.props.id.toString()).getBoundingClientRect().y;
             if (!isInViewport(y)) {
