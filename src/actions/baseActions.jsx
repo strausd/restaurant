@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const fetchRestaurants = () => {
     return (dispatch) => {
-        axios({
+        return axios({
             method: 'get',
             url: 'http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/restaurants.json'
         }).then(response => {

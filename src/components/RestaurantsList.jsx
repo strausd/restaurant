@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import RestaurantListItem from './RestaurantListItem';
 
 
-class RestaurantsList extends React.Component {
+export class RestaurantsList extends React.Component {
 
     render() {
         if (!this.props.restaurants || this.props.restaurants.length === 0) {

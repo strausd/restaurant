@@ -5,7 +5,7 @@ import { getMapInfoArray, getGMapsLocationQuery } from '../misc/utils';
 
 
 // AIzaSyBGyVswgcCkctFs8x4X-14BS16VXWINHPA-oE
-class RestaurantDetailItem extends React.Component  {
+export class RestaurantDetailItem extends React.Component  {
     constructor(props) {
         super(props);
         this.state = { isOpenMarkerInfo: false };

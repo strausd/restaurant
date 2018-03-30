@@ -1,0 +1,2471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render RestaurantsList component properly with no restaurants 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RestaurantsList
+    restaurants={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Loading...",
+    },
+    "ref": null,
+    "rendered": "Loading...",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Loading...",
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render RestaurantsList component properly with restaurants 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RestaurantsList
+    restaurants={
+      Array [
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
+          "category": "Burgers",
+          "contact": Object {
+            "formattedPhone": "(972) 387-2337",
+            "phone": "9723872337",
+            "twitter": "hopdoddy",
+          },
+          "location": Object {
+            "address": "5100 Belt Line Road, STE 502",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "crossStreet": "Dallas North Tollway",
+            "formattedAddress": Array [
+              "5100 Belt Line Road, STE 502 (Dallas North Tollway)",
+              "Addison, TX 75254",
+              "United States",
+            ],
+            "lat": 32.950787,
+            "lng": -96.821118,
+            "postalCode": "75254",
+            "state": "TX",
+          },
+          "name": "Hopdoddy Burger Bar",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png",
+          "category": "Seafood",
+          "contact": Object {
+            "formattedPhone": "(972) 447-9616",
+            "phone": "9724479616",
+            "twitter": "pappadeaux",
+          },
+          "location": Object {
+            "address": "18349 Dallas Pkwy",
+            "cc": "US",
+            "city": "Dallas",
+            "country": "United States",
+            "crossStreet": "at Frankford Rd.",
+            "formattedAddress": Array [
+              "18349 Dallas Pkwy (at Frankford Rd.)",
+              "Dallas, TX 75287",
+              "United States",
+            ],
+            "lat": 32.99908456526653,
+            "lng": -96.83018780592823,
+            "postalCode": "75287",
+            "state": "TX",
+          },
+          "name": "Pappadeaux Seafood Kitchen",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png",
+          "category": "Tap House",
+          "contact": Object {
+            "facebook": "92873089221",
+            "facebookName": "Yard House",
+            "facebookUsername": "YardHouse",
+            "formattedPhone": "(972) 716-4004",
+            "phone": "9727164004",
+            "twitter": "yardhouse",
+          },
+          "location": Object {
+            "address": "5100 Belt Line Rd",
+            "cc": "US",
+            "city": "Dallas",
+            "country": "United States",
+            "formattedAddress": Array [
+              "5100 Belt Line Rd",
+              "Dallas, TX 75254",
+              "United States",
+            ],
+            "lat": 32.95061646,
+            "lng": -96.81974196,
+            "postalCode": "75254",
+            "state": "TX",
+          },
+          "name": "Yard House",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pluckers.png",
+          "category": "Wing Joint",
+          "contact": null,
+          "location": Object {
+            "address": "5100 Beltline Rd",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "formattedAddress": Array [
+              "5100 Beltline Rd",
+              "Addison, TX",
+              "United States",
+            ],
+            "lat": 32.95097877918451,
+            "lng": -96.82020769859702,
+            "state": "TX",
+          },
+          "name": "Pluckers Wing Bar",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/ramen_hakata.png",
+          "category": "Japanese",
+          "contact": Object {
+            "formattedPhone": "(972) 247-2401",
+            "phone": "9722472401",
+            "twitter": "ramenhakata",
+          },
+          "location": Object {
+            "address": "3714 Belt Line Rd",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "crossStreet": "Marsh",
+            "formattedAddress": Array [
+              "3714 Belt Line Rd (Marsh)",
+              "Addison, TX 75001",
+              "United States",
+            ],
+            "lat": 32.95270483276971,
+            "lng": -96.85424159312772,
+            "postalCode": "75001",
+            "state": "TX",
+          },
+          "name": "Ramen Hakata",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/glorias.png",
+          "category": "Mexican",
+          "contact": Object {
+            "facebook": "37663492804",
+            "facebookUsername": "GloriasAddison",
+            "formattedPhone": "(972) 387-8442",
+            "phone": "9723878442",
+            "twitter": "gloriasdfw",
+          },
+          "location": Object {
+            "address": "5100 Belt Line Rd, #864",
+            "cc": "US",
+            "city": "Dallas",
+            "country": "United States",
+            "crossStreet": "btwn Dallas Pkwy & Montfort Dr",
+            "formattedAddress": Array [
+              "5100 Belt Line Rd, #864 (btwn Dallas Pkwy & Montfort Dr)",
+              "Dallas, TX 75254",
+              "United States",
+            ],
+            "lat": 32.95233983087431,
+            "lng": -96.8217200548765,
+            "postalCode": "75254",
+            "state": "TX",
+          },
+          "name": "Gloria's",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/social_house.png",
+          "category": "Bar and Grill",
+          "contact": Object {
+            "formattedPhone": "(972) 392-4300",
+            "phone": "9723924300",
+          },
+          "location": Object {
+            "address": "5100 Belt Line Rd, Ste 410",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "formattedAddress": Array [
+              "5100 Belt Line Rd, Ste 410",
+              "Addison, TX 75254",
+              "United States",
+            ],
+            "lat": 32.951435866666664,
+            "lng": -96.81982755661011,
+            "postalCode": "75254",
+            "state": "TX",
+          },
+          "name": "The Social House",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/chuys.png",
+          "category": "Tex Mex",
+          "contact": null,
+          "location": Object {
+            "address": "4440 Belt Line Rd",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "formattedAddress": Array [
+              "4440 Belt Line Rd",
+              "Addison, TX 75001",
+              "United States",
+            ],
+            "lat": 32.95374271930925,
+            "lng": -96.83582486129093,
+            "postalCode": "75001",
+            "state": "TX",
+          },
+          "name": "Chuy's",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/flying_saucer.png",
+          "category": "Tap House",
+          "contact": Object {
+            "formattedPhone": "(972) 991-7093",
+            "phone": "9729917093",
+          },
+          "location": Object {
+            "address": "14999 Montfort Dr",
+            "cc": "US",
+            "city": "Dallas",
+            "country": "United States",
+            "crossStreet": "at Sakowitz Dr.",
+            "formattedAddress": Array [
+              "14999 Montfort Dr (at Sakowitz Dr.)",
+              "Dallas, TX 75254",
+              "United States",
+            ],
+            "lat": 32.95293601457525,
+            "lng": -96.81884050369263,
+            "postalCode": "75254",
+            "state": "TX",
+          },
+          "name": "Flying Saucer Draught Emporium",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/whole_foods.png",
+          "category": "Prepared Eats",
+          "contact": Object {
+            "formattedPhone": "(214) 854-3334",
+            "phone": "2148543334",
+            "twitter": "wholefoodsdfw",
+          },
+          "location": Object {
+            "address": "5100 Belt Line Rd., Suite 1012",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "crossStreet": "at Dallas North Twy.",
+            "formattedAddress": Array [
+              "5100 Belt Line Rd., Suite 1012 (at Dallas North Twy.)",
+              "Addison, TX 75254",
+              "United States",
+            ],
+            "lat": 32.95285141460555,
+            "lng": -96.8211496464768,
+            "postalCode": "75254",
+            "state": "TX",
+          },
+          "name": "Whole Foods Market",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/the_londoner.png",
+          "category": "Pub",
+          "contact": Object {
+            "formattedPhone": "(972) 458-2444",
+            "phone": "9724582444",
+          },
+          "location": Object {
+            "address": "14930 Midway Rd",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "crossStreet": "at Beltway Dr",
+            "formattedAddress": Array [
+              "14930 Midway Rd (at Beltway Dr)",
+              "Addison, TX 75001",
+              "United States",
+            ],
+            "lat": 32.952423,
+            "lng": -96.83843538333333,
+            "postalCode": "75001",
+            "state": "TX",
+          },
+          "name": "The Londoner",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/original_pancake_house.png",
+          "category": "Coffee and Breakfast",
+          "contact": Object {
+            "formattedPhone": "(972) 385-6468",
+            "phone": "9723856468",
+          },
+          "location": Object {
+            "address": "5220 Belt Line Rd",
+            "cc": "US",
+            "city": "Dallas",
+            "country": "United States",
+            "crossStreet": "at Dallas North Tollway",
+            "formattedAddress": Array [
+              "5220 Belt Line Rd (at Dallas North Tollway)",
+              "Dallas, TX 75254",
+              "United States",
+            ],
+            "lat": 32.953633,
+            "lng": -96.81984901428223,
+            "postalCode": "75254",
+            "state": "TX",
+          },
+          "name": "The Original Pancake House",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/thai_star.png",
+          "category": "Thai",
+          "contact": Object {
+            "formattedPhone": "(972) 991-6334",
+            "phone": "9729916334",
+          },
+          "location": Object {
+            "address": "14833 Midway Rd",
+            "cc": "US",
+            "city": "Addison",
+            "country": "United States",
+            "crossStreet": "at Beltway Dr",
+            "formattedAddress": Array [
+              "14833 Midway Rd (at Beltway Dr)",
+              "Addison, TX 75001",
+              "United States",
+            ],
+            "lat": 32.95027115867483,
+            "lng": -96.8406629562378,
+            "postalCode": "75001",
+            "state": "TX",
+          },
+          "name": "Thai Star",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/in_n_out_burger.png",
+          "category": "Fast Food Burgers",
+          "contact": Object {
+            "formattedPhone": "(800) 786-1000",
+            "phone": "8007861000",
+            "twitter": "innoutburger",
+          },
+          "location": Object {
+            "address": "15260 Dallas Pkwy",
+            "cc": "US",
+            "city": "Dallas",
+            "country": "United States",
+            "crossStreet": "at Prestonwood Town Center",
+            "formattedAddress": Array [
+              "15260 Dallas Pkwy (at Prestonwood Town Center)",
+              "Dallas, TX 75248",
+              "United States",
+            ],
+            "lat": 32.95703457542545,
+            "lng": -96.82081996316793,
+            "postalCode": "75248",
+            "state": "TX",
+          },
+          "name": "In-N-Out Burger",
+        },
+        Object {
+          "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/buffalo_wild_wings.png",
+          "category": "Wing Joint",
+          "contact": Object {
+            "formattedPhone": "(972) 701-9464",
+            "phone": "9727019464",
+            "twitter": "bwwings",
+          },
+          "location": Object {
+            "address": "5000 Belt Line Rd Ste 100",
+            "cc": "US",
+            "city": "Dallas",
+            "country": "United States",
+            "crossStreet": "at Quorum Dr",
+            "formattedAddress": Array [
+              "5000 Belt Line Rd Ste 100 (at Quorum Dr)",
+              "Dallas, TX 75254-6752",
+              "United States",
+            ],
+            "lat": 32.95347617827522,
+            "lng": -96.82554602622986,
+            "postalCode": "75254-6752",
+            "state": "TX",
+          },
+          "name": "Buffalo Wild Wings",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Connect(RestaurantListItem)
+          index={0}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
+              "category": "Burgers",
+              "contact": Object {
+                "formattedPhone": "(972) 387-2337",
+                "phone": "9723872337",
+                "twitter": "hopdoddy",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Road, STE 502",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "Dallas North Tollway",
+                "formattedAddress": Array [
+                  "5100 Belt Line Road, STE 502 (Dallas North Tollway)",
+                  "Addison, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.950787,
+                "lng": -96.821118,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Hopdoddy Burger Bar",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={1}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png",
+              "category": "Seafood",
+              "contact": Object {
+                "formattedPhone": "(972) 447-9616",
+                "phone": "9724479616",
+                "twitter": "pappadeaux",
+              },
+              "location": Object {
+                "address": "18349 Dallas Pkwy",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Frankford Rd.",
+                "formattedAddress": Array [
+                  "18349 Dallas Pkwy (at Frankford Rd.)",
+                  "Dallas, TX 75287",
+                  "United States",
+                ],
+                "lat": 32.99908456526653,
+                "lng": -96.83018780592823,
+                "postalCode": "75287",
+                "state": "TX",
+              },
+              "name": "Pappadeaux Seafood Kitchen",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={2}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png",
+              "category": "Tap House",
+              "contact": Object {
+                "facebook": "92873089221",
+                "facebookName": "Yard House",
+                "facebookUsername": "YardHouse",
+                "formattedPhone": "(972) 716-4004",
+                "phone": "9727164004",
+                "twitter": "yardhouse",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95061646,
+                "lng": -96.81974196,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Yard House",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={3}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pluckers.png",
+              "category": "Wing Joint",
+              "contact": null,
+              "location": Object {
+                "address": "5100 Beltline Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "5100 Beltline Rd",
+                  "Addison, TX",
+                  "United States",
+                ],
+                "lat": 32.95097877918451,
+                "lng": -96.82020769859702,
+                "state": "TX",
+              },
+              "name": "Pluckers Wing Bar",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={4}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/ramen_hakata.png",
+              "category": "Japanese",
+              "contact": Object {
+                "formattedPhone": "(972) 247-2401",
+                "phone": "9722472401",
+                "twitter": "ramenhakata",
+              },
+              "location": Object {
+                "address": "3714 Belt Line Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "Marsh",
+                "formattedAddress": Array [
+                  "3714 Belt Line Rd (Marsh)",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.95270483276971,
+                "lng": -96.85424159312772,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "Ramen Hakata",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={5}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/glorias.png",
+              "category": "Mexican",
+              "contact": Object {
+                "facebook": "37663492804",
+                "facebookUsername": "GloriasAddison",
+                "formattedPhone": "(972) 387-8442",
+                "phone": "9723878442",
+                "twitter": "gloriasdfw",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd, #864",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "btwn Dallas Pkwy & Montfort Dr",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd, #864 (btwn Dallas Pkwy & Montfort Dr)",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95233983087431,
+                "lng": -96.8217200548765,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Gloria's",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={6}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/social_house.png",
+              "category": "Bar and Grill",
+              "contact": Object {
+                "formattedPhone": "(972) 392-4300",
+                "phone": "9723924300",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd, Ste 410",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd, Ste 410",
+                  "Addison, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.951435866666664,
+                "lng": -96.81982755661011,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "The Social House",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={7}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/chuys.png",
+              "category": "Tex Mex",
+              "contact": null,
+              "location": Object {
+                "address": "4440 Belt Line Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "4440 Belt Line Rd",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.95374271930925,
+                "lng": -96.83582486129093,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "Chuy's",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={8}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/flying_saucer.png",
+              "category": "Tap House",
+              "contact": Object {
+                "formattedPhone": "(972) 991-7093",
+                "phone": "9729917093",
+              },
+              "location": Object {
+                "address": "14999 Montfort Dr",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Sakowitz Dr.",
+                "formattedAddress": Array [
+                  "14999 Montfort Dr (at Sakowitz Dr.)",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95293601457525,
+                "lng": -96.81884050369263,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Flying Saucer Draught Emporium",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={9}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/whole_foods.png",
+              "category": "Prepared Eats",
+              "contact": Object {
+                "formattedPhone": "(214) 854-3334",
+                "phone": "2148543334",
+                "twitter": "wholefoodsdfw",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd., Suite 1012",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "at Dallas North Twy.",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd., Suite 1012 (at Dallas North Twy.)",
+                  "Addison, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95285141460555,
+                "lng": -96.8211496464768,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Whole Foods Market",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={10}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/the_londoner.png",
+              "category": "Pub",
+              "contact": Object {
+                "formattedPhone": "(972) 458-2444",
+                "phone": "9724582444",
+              },
+              "location": Object {
+                "address": "14930 Midway Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "at Beltway Dr",
+                "formattedAddress": Array [
+                  "14930 Midway Rd (at Beltway Dr)",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.952423,
+                "lng": -96.83843538333333,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "The Londoner",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={11}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/original_pancake_house.png",
+              "category": "Coffee and Breakfast",
+              "contact": Object {
+                "formattedPhone": "(972) 385-6468",
+                "phone": "9723856468",
+              },
+              "location": Object {
+                "address": "5220 Belt Line Rd",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Dallas North Tollway",
+                "formattedAddress": Array [
+                  "5220 Belt Line Rd (at Dallas North Tollway)",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.953633,
+                "lng": -96.81984901428223,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "The Original Pancake House",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={12}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/thai_star.png",
+              "category": "Thai",
+              "contact": Object {
+                "formattedPhone": "(972) 991-6334",
+                "phone": "9729916334",
+              },
+              "location": Object {
+                "address": "14833 Midway Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "at Beltway Dr",
+                "formattedAddress": Array [
+                  "14833 Midway Rd (at Beltway Dr)",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.95027115867483,
+                "lng": -96.8406629562378,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "Thai Star",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={13}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/in_n_out_burger.png",
+              "category": "Fast Food Burgers",
+              "contact": Object {
+                "formattedPhone": "(800) 786-1000",
+                "phone": "8007861000",
+                "twitter": "innoutburger",
+              },
+              "location": Object {
+                "address": "15260 Dallas Pkwy",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Prestonwood Town Center",
+                "formattedAddress": Array [
+                  "15260 Dallas Pkwy (at Prestonwood Town Center)",
+                  "Dallas, TX 75248",
+                  "United States",
+                ],
+                "lat": 32.95703457542545,
+                "lng": -96.82081996316793,
+                "postalCode": "75248",
+                "state": "TX",
+              },
+              "name": "In-N-Out Burger",
+            }
+          }
+        />,
+        <Connect(RestaurantListItem)
+          index={14}
+          restaurant={
+            Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/buffalo_wild_wings.png",
+              "category": "Wing Joint",
+              "contact": Object {
+                "formattedPhone": "(972) 701-9464",
+                "phone": "9727019464",
+                "twitter": "bwwings",
+              },
+              "location": Object {
+                "address": "5000 Belt Line Rd Ste 100",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Quorum Dr",
+                "formattedAddress": Array [
+                  "5000 Belt Line Rd Ste 100 (at Quorum Dr)",
+                  "Dallas, TX 75254-6752",
+                  "United States",
+                ],
+                "lat": 32.95347617827522,
+                "lng": -96.82554602622986,
+                "postalCode": "75254-6752",
+                "state": "TX",
+              },
+              "name": "Buffalo Wild Wings",
+            }
+          }
+        />,
+      ],
+      "className": "restaurants-list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "class",
+        "props": Object {
+          "index": 0,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
+            "category": "Burgers",
+            "contact": Object {
+              "formattedPhone": "(972) 387-2337",
+              "phone": "9723872337",
+              "twitter": "hopdoddy",
+            },
+            "location": Object {
+              "address": "5100 Belt Line Road, STE 502",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "crossStreet": "Dallas North Tollway",
+              "formattedAddress": Array [
+                "5100 Belt Line Road, STE 502 (Dallas North Tollway)",
+                "Addison, TX 75254",
+                "United States",
+              ],
+              "lat": 32.950787,
+              "lng": -96.821118,
+              "postalCode": "75254",
+              "state": "TX",
+            },
+            "name": "Hopdoddy Burger Bar",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "index": 1,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png",
+            "category": "Seafood",
+            "contact": Object {
+              "formattedPhone": "(972) 447-9616",
+              "phone": "9724479616",
+              "twitter": "pappadeaux",
+            },
+            "location": Object {
+              "address": "18349 Dallas Pkwy",
+              "cc": "US",
+              "city": "Dallas",
+              "country": "United States",
+              "crossStreet": "at Frankford Rd.",
+              "formattedAddress": Array [
+                "18349 Dallas Pkwy (at Frankford Rd.)",
+                "Dallas, TX 75287",
+                "United States",
+              ],
+              "lat": 32.99908456526653,
+              "lng": -96.83018780592823,
+              "postalCode": "75287",
+              "state": "TX",
+            },
+            "name": "Pappadeaux Seafood Kitchen",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "class",
+        "props": Object {
+          "index": 2,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png",
+            "category": "Tap House",
+            "contact": Object {
+              "facebook": "92873089221",
+              "facebookName": "Yard House",
+              "facebookUsername": "YardHouse",
+              "formattedPhone": "(972) 716-4004",
+              "phone": "9727164004",
+              "twitter": "yardhouse",
+            },
+            "location": Object {
+              "address": "5100 Belt Line Rd",
+              "cc": "US",
+              "city": "Dallas",
+              "country": "United States",
+              "formattedAddress": Array [
+                "5100 Belt Line Rd",
+                "Dallas, TX 75254",
+                "United States",
+              ],
+              "lat": 32.95061646,
+              "lng": -96.81974196,
+              "postalCode": "75254",
+              "state": "TX",
+            },
+            "name": "Yard House",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "class",
+        "props": Object {
+          "index": 3,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pluckers.png",
+            "category": "Wing Joint",
+            "contact": null,
+            "location": Object {
+              "address": "5100 Beltline Rd",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "formattedAddress": Array [
+                "5100 Beltline Rd",
+                "Addison, TX",
+                "United States",
+              ],
+              "lat": 32.95097877918451,
+              "lng": -96.82020769859702,
+              "state": "TX",
+            },
+            "name": "Pluckers Wing Bar",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "class",
+        "props": Object {
+          "index": 4,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/ramen_hakata.png",
+            "category": "Japanese",
+            "contact": Object {
+              "formattedPhone": "(972) 247-2401",
+              "phone": "9722472401",
+              "twitter": "ramenhakata",
+            },
+            "location": Object {
+              "address": "3714 Belt Line Rd",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "crossStreet": "Marsh",
+              "formattedAddress": Array [
+                "3714 Belt Line Rd (Marsh)",
+                "Addison, TX 75001",
+                "United States",
+              ],
+              "lat": 32.95270483276971,
+              "lng": -96.85424159312772,
+              "postalCode": "75001",
+              "state": "TX",
+            },
+            "name": "Ramen Hakata",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "class",
+        "props": Object {
+          "index": 5,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/glorias.png",
+            "category": "Mexican",
+            "contact": Object {
+              "facebook": "37663492804",
+              "facebookUsername": "GloriasAddison",
+              "formattedPhone": "(972) 387-8442",
+              "phone": "9723878442",
+              "twitter": "gloriasdfw",
+            },
+            "location": Object {
+              "address": "5100 Belt Line Rd, #864",
+              "cc": "US",
+              "city": "Dallas",
+              "country": "United States",
+              "crossStreet": "btwn Dallas Pkwy & Montfort Dr",
+              "formattedAddress": Array [
+                "5100 Belt Line Rd, #864 (btwn Dallas Pkwy & Montfort Dr)",
+                "Dallas, TX 75254",
+                "United States",
+              ],
+              "lat": 32.95233983087431,
+              "lng": -96.8217200548765,
+              "postalCode": "75254",
+              "state": "TX",
+            },
+            "name": "Gloria's",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "6",
+        "nodeType": "class",
+        "props": Object {
+          "index": 6,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/social_house.png",
+            "category": "Bar and Grill",
+            "contact": Object {
+              "formattedPhone": "(972) 392-4300",
+              "phone": "9723924300",
+            },
+            "location": Object {
+              "address": "5100 Belt Line Rd, Ste 410",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "formattedAddress": Array [
+                "5100 Belt Line Rd, Ste 410",
+                "Addison, TX 75254",
+                "United States",
+              ],
+              "lat": 32.951435866666664,
+              "lng": -96.81982755661011,
+              "postalCode": "75254",
+              "state": "TX",
+            },
+            "name": "The Social House",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "7",
+        "nodeType": "class",
+        "props": Object {
+          "index": 7,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/chuys.png",
+            "category": "Tex Mex",
+            "contact": null,
+            "location": Object {
+              "address": "4440 Belt Line Rd",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "formattedAddress": Array [
+                "4440 Belt Line Rd",
+                "Addison, TX 75001",
+                "United States",
+              ],
+              "lat": 32.95374271930925,
+              "lng": -96.83582486129093,
+              "postalCode": "75001",
+              "state": "TX",
+            },
+            "name": "Chuy's",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "8",
+        "nodeType": "class",
+        "props": Object {
+          "index": 8,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/flying_saucer.png",
+            "category": "Tap House",
+            "contact": Object {
+              "formattedPhone": "(972) 991-7093",
+              "phone": "9729917093",
+            },
+            "location": Object {
+              "address": "14999 Montfort Dr",
+              "cc": "US",
+              "city": "Dallas",
+              "country": "United States",
+              "crossStreet": "at Sakowitz Dr.",
+              "formattedAddress": Array [
+                "14999 Montfort Dr (at Sakowitz Dr.)",
+                "Dallas, TX 75254",
+                "United States",
+              ],
+              "lat": 32.95293601457525,
+              "lng": -96.81884050369263,
+              "postalCode": "75254",
+              "state": "TX",
+            },
+            "name": "Flying Saucer Draught Emporium",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "9",
+        "nodeType": "class",
+        "props": Object {
+          "index": 9,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/whole_foods.png",
+            "category": "Prepared Eats",
+            "contact": Object {
+              "formattedPhone": "(214) 854-3334",
+              "phone": "2148543334",
+              "twitter": "wholefoodsdfw",
+            },
+            "location": Object {
+              "address": "5100 Belt Line Rd., Suite 1012",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "crossStreet": "at Dallas North Twy.",
+              "formattedAddress": Array [
+                "5100 Belt Line Rd., Suite 1012 (at Dallas North Twy.)",
+                "Addison, TX 75254",
+                "United States",
+              ],
+              "lat": 32.95285141460555,
+              "lng": -96.8211496464768,
+              "postalCode": "75254",
+              "state": "TX",
+            },
+            "name": "Whole Foods Market",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "10",
+        "nodeType": "class",
+        "props": Object {
+          "index": 10,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/the_londoner.png",
+            "category": "Pub",
+            "contact": Object {
+              "formattedPhone": "(972) 458-2444",
+              "phone": "9724582444",
+            },
+            "location": Object {
+              "address": "14930 Midway Rd",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "crossStreet": "at Beltway Dr",
+              "formattedAddress": Array [
+                "14930 Midway Rd (at Beltway Dr)",
+                "Addison, TX 75001",
+                "United States",
+              ],
+              "lat": 32.952423,
+              "lng": -96.83843538333333,
+              "postalCode": "75001",
+              "state": "TX",
+            },
+            "name": "The Londoner",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "11",
+        "nodeType": "class",
+        "props": Object {
+          "index": 11,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/original_pancake_house.png",
+            "category": "Coffee and Breakfast",
+            "contact": Object {
+              "formattedPhone": "(972) 385-6468",
+              "phone": "9723856468",
+            },
+            "location": Object {
+              "address": "5220 Belt Line Rd",
+              "cc": "US",
+              "city": "Dallas",
+              "country": "United States",
+              "crossStreet": "at Dallas North Tollway",
+              "formattedAddress": Array [
+                "5220 Belt Line Rd (at Dallas North Tollway)",
+                "Dallas, TX 75254",
+                "United States",
+              ],
+              "lat": 32.953633,
+              "lng": -96.81984901428223,
+              "postalCode": "75254",
+              "state": "TX",
+            },
+            "name": "The Original Pancake House",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "12",
+        "nodeType": "class",
+        "props": Object {
+          "index": 12,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/thai_star.png",
+            "category": "Thai",
+            "contact": Object {
+              "formattedPhone": "(972) 991-6334",
+              "phone": "9729916334",
+            },
+            "location": Object {
+              "address": "14833 Midway Rd",
+              "cc": "US",
+              "city": "Addison",
+              "country": "United States",
+              "crossStreet": "at Beltway Dr",
+              "formattedAddress": Array [
+                "14833 Midway Rd (at Beltway Dr)",
+                "Addison, TX 75001",
+                "United States",
+              ],
+              "lat": 32.95027115867483,
+              "lng": -96.8406629562378,
+              "postalCode": "75001",
+              "state": "TX",
+            },
+            "name": "Thai Star",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "13",
+        "nodeType": "class",
+        "props": Object {
+          "index": 13,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/in_n_out_burger.png",
+            "category": "Fast Food Burgers",
+            "contact": Object {
+              "formattedPhone": "(800) 786-1000",
+              "phone": "8007861000",
+              "twitter": "innoutburger",
+            },
+            "location": Object {
+              "address": "15260 Dallas Pkwy",
+              "cc": "US",
+              "city": "Dallas",
+              "country": "United States",
+              "crossStreet": "at Prestonwood Town Center",
+              "formattedAddress": Array [
+                "15260 Dallas Pkwy (at Prestonwood Town Center)",
+                "Dallas, TX 75248",
+                "United States",
+              ],
+              "lat": 32.95703457542545,
+              "lng": -96.82081996316793,
+              "postalCode": "75248",
+              "state": "TX",
+            },
+            "name": "In-N-Out Burger",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "14",
+        "nodeType": "class",
+        "props": Object {
+          "index": 14,
+          "restaurant": Object {
+            "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/buffalo_wild_wings.png",
+            "category": "Wing Joint",
+            "contact": Object {
+              "formattedPhone": "(972) 701-9464",
+              "phone": "9727019464",
+              "twitter": "bwwings",
+            },
+            "location": Object {
+              "address": "5000 Belt Line Rd Ste 100",
+              "cc": "US",
+              "city": "Dallas",
+              "country": "United States",
+              "crossStreet": "at Quorum Dr",
+              "formattedAddress": Array [
+                "5000 Belt Line Rd Ste 100 (at Quorum Dr)",
+                "Dallas, TX 75254-6752",
+                "United States",
+              ],
+              "lat": 32.95347617827522,
+              "lng": -96.82554602622986,
+              "postalCode": "75254-6752",
+              "state": "TX",
+            },
+            "name": "Buffalo Wild Wings",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(RestaurantListItem)
+            index={0}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
+                "category": "Burgers",
+                "contact": Object {
+                  "formattedPhone": "(972) 387-2337",
+                  "phone": "9723872337",
+                  "twitter": "hopdoddy",
+                },
+                "location": Object {
+                  "address": "5100 Belt Line Road, STE 502",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "crossStreet": "Dallas North Tollway",
+                  "formattedAddress": Array [
+                    "5100 Belt Line Road, STE 502 (Dallas North Tollway)",
+                    "Addison, TX 75254",
+                    "United States",
+                  ],
+                  "lat": 32.950787,
+                  "lng": -96.821118,
+                  "postalCode": "75254",
+                  "state": "TX",
+                },
+                "name": "Hopdoddy Burger Bar",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={1}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png",
+                "category": "Seafood",
+                "contact": Object {
+                  "formattedPhone": "(972) 447-9616",
+                  "phone": "9724479616",
+                  "twitter": "pappadeaux",
+                },
+                "location": Object {
+                  "address": "18349 Dallas Pkwy",
+                  "cc": "US",
+                  "city": "Dallas",
+                  "country": "United States",
+                  "crossStreet": "at Frankford Rd.",
+                  "formattedAddress": Array [
+                    "18349 Dallas Pkwy (at Frankford Rd.)",
+                    "Dallas, TX 75287",
+                    "United States",
+                  ],
+                  "lat": 32.99908456526653,
+                  "lng": -96.83018780592823,
+                  "postalCode": "75287",
+                  "state": "TX",
+                },
+                "name": "Pappadeaux Seafood Kitchen",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={2}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png",
+                "category": "Tap House",
+                "contact": Object {
+                  "facebook": "92873089221",
+                  "facebookName": "Yard House",
+                  "facebookUsername": "YardHouse",
+                  "formattedPhone": "(972) 716-4004",
+                  "phone": "9727164004",
+                  "twitter": "yardhouse",
+                },
+                "location": Object {
+                  "address": "5100 Belt Line Rd",
+                  "cc": "US",
+                  "city": "Dallas",
+                  "country": "United States",
+                  "formattedAddress": Array [
+                    "5100 Belt Line Rd",
+                    "Dallas, TX 75254",
+                    "United States",
+                  ],
+                  "lat": 32.95061646,
+                  "lng": -96.81974196,
+                  "postalCode": "75254",
+                  "state": "TX",
+                },
+                "name": "Yard House",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={3}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pluckers.png",
+                "category": "Wing Joint",
+                "contact": null,
+                "location": Object {
+                  "address": "5100 Beltline Rd",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "formattedAddress": Array [
+                    "5100 Beltline Rd",
+                    "Addison, TX",
+                    "United States",
+                  ],
+                  "lat": 32.95097877918451,
+                  "lng": -96.82020769859702,
+                  "state": "TX",
+                },
+                "name": "Pluckers Wing Bar",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={4}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/ramen_hakata.png",
+                "category": "Japanese",
+                "contact": Object {
+                  "formattedPhone": "(972) 247-2401",
+                  "phone": "9722472401",
+                  "twitter": "ramenhakata",
+                },
+                "location": Object {
+                  "address": "3714 Belt Line Rd",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "crossStreet": "Marsh",
+                  "formattedAddress": Array [
+                    "3714 Belt Line Rd (Marsh)",
+                    "Addison, TX 75001",
+                    "United States",
+                  ],
+                  "lat": 32.95270483276971,
+                  "lng": -96.85424159312772,
+                  "postalCode": "75001",
+                  "state": "TX",
+                },
+                "name": "Ramen Hakata",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={5}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/glorias.png",
+                "category": "Mexican",
+                "contact": Object {
+                  "facebook": "37663492804",
+                  "facebookUsername": "GloriasAddison",
+                  "formattedPhone": "(972) 387-8442",
+                  "phone": "9723878442",
+                  "twitter": "gloriasdfw",
+                },
+                "location": Object {
+                  "address": "5100 Belt Line Rd, #864",
+                  "cc": "US",
+                  "city": "Dallas",
+                  "country": "United States",
+                  "crossStreet": "btwn Dallas Pkwy & Montfort Dr",
+                  "formattedAddress": Array [
+                    "5100 Belt Line Rd, #864 (btwn Dallas Pkwy & Montfort Dr)",
+                    "Dallas, TX 75254",
+                    "United States",
+                  ],
+                  "lat": 32.95233983087431,
+                  "lng": -96.8217200548765,
+                  "postalCode": "75254",
+                  "state": "TX",
+                },
+                "name": "Gloria's",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={6}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/social_house.png",
+                "category": "Bar and Grill",
+                "contact": Object {
+                  "formattedPhone": "(972) 392-4300",
+                  "phone": "9723924300",
+                },
+                "location": Object {
+                  "address": "5100 Belt Line Rd, Ste 410",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "formattedAddress": Array [
+                    "5100 Belt Line Rd, Ste 410",
+                    "Addison, TX 75254",
+                    "United States",
+                  ],
+                  "lat": 32.951435866666664,
+                  "lng": -96.81982755661011,
+                  "postalCode": "75254",
+                  "state": "TX",
+                },
+                "name": "The Social House",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={7}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/chuys.png",
+                "category": "Tex Mex",
+                "contact": null,
+                "location": Object {
+                  "address": "4440 Belt Line Rd",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "formattedAddress": Array [
+                    "4440 Belt Line Rd",
+                    "Addison, TX 75001",
+                    "United States",
+                  ],
+                  "lat": 32.95374271930925,
+                  "lng": -96.83582486129093,
+                  "postalCode": "75001",
+                  "state": "TX",
+                },
+                "name": "Chuy's",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={8}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/flying_saucer.png",
+                "category": "Tap House",
+                "contact": Object {
+                  "formattedPhone": "(972) 991-7093",
+                  "phone": "9729917093",
+                },
+                "location": Object {
+                  "address": "14999 Montfort Dr",
+                  "cc": "US",
+                  "city": "Dallas",
+                  "country": "United States",
+                  "crossStreet": "at Sakowitz Dr.",
+                  "formattedAddress": Array [
+                    "14999 Montfort Dr (at Sakowitz Dr.)",
+                    "Dallas, TX 75254",
+                    "United States",
+                  ],
+                  "lat": 32.95293601457525,
+                  "lng": -96.81884050369263,
+                  "postalCode": "75254",
+                  "state": "TX",
+                },
+                "name": "Flying Saucer Draught Emporium",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={9}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/whole_foods.png",
+                "category": "Prepared Eats",
+                "contact": Object {
+                  "formattedPhone": "(214) 854-3334",
+                  "phone": "2148543334",
+                  "twitter": "wholefoodsdfw",
+                },
+                "location": Object {
+                  "address": "5100 Belt Line Rd., Suite 1012",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "crossStreet": "at Dallas North Twy.",
+                  "formattedAddress": Array [
+                    "5100 Belt Line Rd., Suite 1012 (at Dallas North Twy.)",
+                    "Addison, TX 75254",
+                    "United States",
+                  ],
+                  "lat": 32.95285141460555,
+                  "lng": -96.8211496464768,
+                  "postalCode": "75254",
+                  "state": "TX",
+                },
+                "name": "Whole Foods Market",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={10}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/the_londoner.png",
+                "category": "Pub",
+                "contact": Object {
+                  "formattedPhone": "(972) 458-2444",
+                  "phone": "9724582444",
+                },
+                "location": Object {
+                  "address": "14930 Midway Rd",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "crossStreet": "at Beltway Dr",
+                  "formattedAddress": Array [
+                    "14930 Midway Rd (at Beltway Dr)",
+                    "Addison, TX 75001",
+                    "United States",
+                  ],
+                  "lat": 32.952423,
+                  "lng": -96.83843538333333,
+                  "postalCode": "75001",
+                  "state": "TX",
+                },
+                "name": "The Londoner",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={11}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/original_pancake_house.png",
+                "category": "Coffee and Breakfast",
+                "contact": Object {
+                  "formattedPhone": "(972) 385-6468",
+                  "phone": "9723856468",
+                },
+                "location": Object {
+                  "address": "5220 Belt Line Rd",
+                  "cc": "US",
+                  "city": "Dallas",
+                  "country": "United States",
+                  "crossStreet": "at Dallas North Tollway",
+                  "formattedAddress": Array [
+                    "5220 Belt Line Rd (at Dallas North Tollway)",
+                    "Dallas, TX 75254",
+                    "United States",
+                  ],
+                  "lat": 32.953633,
+                  "lng": -96.81984901428223,
+                  "postalCode": "75254",
+                  "state": "TX",
+                },
+                "name": "The Original Pancake House",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={12}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/thai_star.png",
+                "category": "Thai",
+                "contact": Object {
+                  "formattedPhone": "(972) 991-6334",
+                  "phone": "9729916334",
+                },
+                "location": Object {
+                  "address": "14833 Midway Rd",
+                  "cc": "US",
+                  "city": "Addison",
+                  "country": "United States",
+                  "crossStreet": "at Beltway Dr",
+                  "formattedAddress": Array [
+                    "14833 Midway Rd (at Beltway Dr)",
+                    "Addison, TX 75001",
+                    "United States",
+                  ],
+                  "lat": 32.95027115867483,
+                  "lng": -96.8406629562378,
+                  "postalCode": "75001",
+                  "state": "TX",
+                },
+                "name": "Thai Star",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={13}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/in_n_out_burger.png",
+                "category": "Fast Food Burgers",
+                "contact": Object {
+                  "formattedPhone": "(800) 786-1000",
+                  "phone": "8007861000",
+                  "twitter": "innoutburger",
+                },
+                "location": Object {
+                  "address": "15260 Dallas Pkwy",
+                  "cc": "US",
+                  "city": "Dallas",
+                  "country": "United States",
+                  "crossStreet": "at Prestonwood Town Center",
+                  "formattedAddress": Array [
+                    "15260 Dallas Pkwy (at Prestonwood Town Center)",
+                    "Dallas, TX 75248",
+                    "United States",
+                  ],
+                  "lat": 32.95703457542545,
+                  "lng": -96.82081996316793,
+                  "postalCode": "75248",
+                  "state": "TX",
+                },
+                "name": "In-N-Out Burger",
+              }
+            }
+          />,
+          <Connect(RestaurantListItem)
+            index={14}
+            restaurant={
+              Object {
+                "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/buffalo_wild_wings.png",
+                "category": "Wing Joint",
+                "contact": Object {
+                  "formattedPhone": "(972) 701-9464",
+                  "phone": "9727019464",
+                  "twitter": "bwwings",
+                },
+                "location": Object {
+                  "address": "5000 Belt Line Rd Ste 100",
+                  "cc": "US",
+                  "city": "Dallas",
+                  "country": "United States",
+                  "crossStreet": "at Quorum Dr",
+                  "formattedAddress": Array [
+                    "5000 Belt Line Rd Ste 100 (at Quorum Dr)",
+                    "Dallas, TX 75254-6752",
+                    "United States",
+                  ],
+                  "lat": 32.95347617827522,
+                  "lng": -96.82554602622986,
+                  "postalCode": "75254-6752",
+                  "state": "TX",
+                },
+                "name": "Buffalo Wild Wings",
+              }
+            }
+          />,
+        ],
+        "className": "restaurants-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "index": 0,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png",
+              "category": "Burgers",
+              "contact": Object {
+                "formattedPhone": "(972) 387-2337",
+                "phone": "9723872337",
+                "twitter": "hopdoddy",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Road, STE 502",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "Dallas North Tollway",
+                "formattedAddress": Array [
+                  "5100 Belt Line Road, STE 502 (Dallas North Tollway)",
+                  "Addison, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.950787,
+                "lng": -96.821118,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Hopdoddy Burger Bar",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "index": 1,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png",
+              "category": "Seafood",
+              "contact": Object {
+                "formattedPhone": "(972) 447-9616",
+                "phone": "9724479616",
+                "twitter": "pappadeaux",
+              },
+              "location": Object {
+                "address": "18349 Dallas Pkwy",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Frankford Rd.",
+                "formattedAddress": Array [
+                  "18349 Dallas Pkwy (at Frankford Rd.)",
+                  "Dallas, TX 75287",
+                  "United States",
+                ],
+                "lat": 32.99908456526653,
+                "lng": -96.83018780592823,
+                "postalCode": "75287",
+                "state": "TX",
+              },
+              "name": "Pappadeaux Seafood Kitchen",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "class",
+          "props": Object {
+            "index": 2,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png",
+              "category": "Tap House",
+              "contact": Object {
+                "facebook": "92873089221",
+                "facebookName": "Yard House",
+                "facebookUsername": "YardHouse",
+                "formattedPhone": "(972) 716-4004",
+                "phone": "9727164004",
+                "twitter": "yardhouse",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95061646,
+                "lng": -96.81974196,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Yard House",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "class",
+          "props": Object {
+            "index": 3,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pluckers.png",
+              "category": "Wing Joint",
+              "contact": null,
+              "location": Object {
+                "address": "5100 Beltline Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "5100 Beltline Rd",
+                  "Addison, TX",
+                  "United States",
+                ],
+                "lat": 32.95097877918451,
+                "lng": -96.82020769859702,
+                "state": "TX",
+              },
+              "name": "Pluckers Wing Bar",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "class",
+          "props": Object {
+            "index": 4,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/ramen_hakata.png",
+              "category": "Japanese",
+              "contact": Object {
+                "formattedPhone": "(972) 247-2401",
+                "phone": "9722472401",
+                "twitter": "ramenhakata",
+              },
+              "location": Object {
+                "address": "3714 Belt Line Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "Marsh",
+                "formattedAddress": Array [
+                  "3714 Belt Line Rd (Marsh)",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.95270483276971,
+                "lng": -96.85424159312772,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "Ramen Hakata",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "class",
+          "props": Object {
+            "index": 5,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/glorias.png",
+              "category": "Mexican",
+              "contact": Object {
+                "facebook": "37663492804",
+                "facebookUsername": "GloriasAddison",
+                "formattedPhone": "(972) 387-8442",
+                "phone": "9723878442",
+                "twitter": "gloriasdfw",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd, #864",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "btwn Dallas Pkwy & Montfort Dr",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd, #864 (btwn Dallas Pkwy & Montfort Dr)",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95233983087431,
+                "lng": -96.8217200548765,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Gloria's",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "6",
+          "nodeType": "class",
+          "props": Object {
+            "index": 6,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/social_house.png",
+              "category": "Bar and Grill",
+              "contact": Object {
+                "formattedPhone": "(972) 392-4300",
+                "phone": "9723924300",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd, Ste 410",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd, Ste 410",
+                  "Addison, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.951435866666664,
+                "lng": -96.81982755661011,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "The Social House",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "7",
+          "nodeType": "class",
+          "props": Object {
+            "index": 7,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/chuys.png",
+              "category": "Tex Mex",
+              "contact": null,
+              "location": Object {
+                "address": "4440 Belt Line Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "formattedAddress": Array [
+                  "4440 Belt Line Rd",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.95374271930925,
+                "lng": -96.83582486129093,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "Chuy's",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "8",
+          "nodeType": "class",
+          "props": Object {
+            "index": 8,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/flying_saucer.png",
+              "category": "Tap House",
+              "contact": Object {
+                "formattedPhone": "(972) 991-7093",
+                "phone": "9729917093",
+              },
+              "location": Object {
+                "address": "14999 Montfort Dr",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Sakowitz Dr.",
+                "formattedAddress": Array [
+                  "14999 Montfort Dr (at Sakowitz Dr.)",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95293601457525,
+                "lng": -96.81884050369263,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Flying Saucer Draught Emporium",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "9",
+          "nodeType": "class",
+          "props": Object {
+            "index": 9,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/whole_foods.png",
+              "category": "Prepared Eats",
+              "contact": Object {
+                "formattedPhone": "(214) 854-3334",
+                "phone": "2148543334",
+                "twitter": "wholefoodsdfw",
+              },
+              "location": Object {
+                "address": "5100 Belt Line Rd., Suite 1012",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "at Dallas North Twy.",
+                "formattedAddress": Array [
+                  "5100 Belt Line Rd., Suite 1012 (at Dallas North Twy.)",
+                  "Addison, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.95285141460555,
+                "lng": -96.8211496464768,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "Whole Foods Market",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "10",
+          "nodeType": "class",
+          "props": Object {
+            "index": 10,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/the_londoner.png",
+              "category": "Pub",
+              "contact": Object {
+                "formattedPhone": "(972) 458-2444",
+                "phone": "9724582444",
+              },
+              "location": Object {
+                "address": "14930 Midway Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "at Beltway Dr",
+                "formattedAddress": Array [
+                  "14930 Midway Rd (at Beltway Dr)",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.952423,
+                "lng": -96.83843538333333,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "The Londoner",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "11",
+          "nodeType": "class",
+          "props": Object {
+            "index": 11,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/original_pancake_house.png",
+              "category": "Coffee and Breakfast",
+              "contact": Object {
+                "formattedPhone": "(972) 385-6468",
+                "phone": "9723856468",
+              },
+              "location": Object {
+                "address": "5220 Belt Line Rd",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Dallas North Tollway",
+                "formattedAddress": Array [
+                  "5220 Belt Line Rd (at Dallas North Tollway)",
+                  "Dallas, TX 75254",
+                  "United States",
+                ],
+                "lat": 32.953633,
+                "lng": -96.81984901428223,
+                "postalCode": "75254",
+                "state": "TX",
+              },
+              "name": "The Original Pancake House",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "12",
+          "nodeType": "class",
+          "props": Object {
+            "index": 12,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/thai_star.png",
+              "category": "Thai",
+              "contact": Object {
+                "formattedPhone": "(972) 991-6334",
+                "phone": "9729916334",
+              },
+              "location": Object {
+                "address": "14833 Midway Rd",
+                "cc": "US",
+                "city": "Addison",
+                "country": "United States",
+                "crossStreet": "at Beltway Dr",
+                "formattedAddress": Array [
+                  "14833 Midway Rd (at Beltway Dr)",
+                  "Addison, TX 75001",
+                  "United States",
+                ],
+                "lat": 32.95027115867483,
+                "lng": -96.8406629562378,
+                "postalCode": "75001",
+                "state": "TX",
+              },
+              "name": "Thai Star",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "13",
+          "nodeType": "class",
+          "props": Object {
+            "index": 13,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/in_n_out_burger.png",
+              "category": "Fast Food Burgers",
+              "contact": Object {
+                "formattedPhone": "(800) 786-1000",
+                "phone": "8007861000",
+                "twitter": "innoutburger",
+              },
+              "location": Object {
+                "address": "15260 Dallas Pkwy",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Prestonwood Town Center",
+                "formattedAddress": Array [
+                  "15260 Dallas Pkwy (at Prestonwood Town Center)",
+                  "Dallas, TX 75248",
+                  "United States",
+                ],
+                "lat": 32.95703457542545,
+                "lng": -96.82081996316793,
+                "postalCode": "75248",
+                "state": "TX",
+              },
+              "name": "In-N-Out Burger",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "14",
+          "nodeType": "class",
+          "props": Object {
+            "index": 14,
+            "restaurant": Object {
+              "backgroundImageURL": "http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/buffalo_wild_wings.png",
+              "category": "Wing Joint",
+              "contact": Object {
+                "formattedPhone": "(972) 701-9464",
+                "phone": "9727019464",
+                "twitter": "bwwings",
+              },
+              "location": Object {
+                "address": "5000 Belt Line Rd Ste 100",
+                "cc": "US",
+                "city": "Dallas",
+                "country": "United States",
+                "crossStreet": "at Quorum Dr",
+                "formattedAddress": Array [
+                  "5000 Belt Line Rd Ste 100 (at Quorum Dr)",
+                  "Dallas, TX 75254-6752",
+                  "United States",
+                ],
+                "lat": 32.95347617827522,
+                "lng": -96.82554602622986,
+                "postalCode": "75254-6752",
+                "state": "TX",
+              },
+              "name": "Buffalo Wild Wings",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
