@@ -8,27 +8,22 @@ import { getMapInfoArray } from '../misc/utils';
 export class MapPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            restaurant_marker_info: []
-        };
-    }
-
-    componentWillMount() {
-        if (!this.props.restaurants || this.props.restaurants.length < 1) {
-            this.setState({ restaurant_marker_info: [] });
+        if (!props.restaurants || props.restaurants.length < 1) {
+            this.state = { restaurant_marker_info: [] };
         } else {
-            const restaurants = getMapInfoArray(this.props.restaurants);
-            this.setState({ restaurant_marker_info: restaurants });
+            const restaurants = getMapInfoArray(props.restaurants);
+            this.state = { restaurant_marker_info: restaurants };
         }
     }
-    
 
     componentWillReceiveProps(nextProps) {
         if (!nextProps.restaurants || nextProps.restaurants.length < 1) {
-            this.setState({ restaurant_marker_info: [] });
+            this.setState(() => ({ restaurant_marker_info: [] }));
         } else {
             const restaurants = getMapInfoArray(nextProps.restaurants);
-            this.setState({ restaurant_marker_info: restaurants });
+            if (JSON.stringify(restaurants) !== JSON.stringify(nextProps.restaurants)) {
+                this.setState(() => ({ restaurant_marker_info: restaurants }));
+            }
         }
     }
 

@@ -12,7 +12,7 @@ export class RestaurantDetailItem extends React.Component  {
     }
 
     onMarkerToggle = () => {
-        this.setState({ isOpenMarkerInfo: !this.state.isOpenMarkerInfo });
+        this.setState(prevState => ({ isOpenMarkerInfo: !prevState.isOpenMarkerInfo }));
     }
 
     render() {

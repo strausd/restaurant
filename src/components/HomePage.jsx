@@ -44,9 +44,9 @@ export class HomePage extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.location.pathname === '/') {
-            this.setState(prevState => ({ showWelcome: true }));
+            this.setState(() => ({ showWelcome: true }));
         } else {
-            this.setState(prevState => ({ showWelcome: false }));
+            this.setState(() => ({ showWelcome: false }));
         }
     }
 
